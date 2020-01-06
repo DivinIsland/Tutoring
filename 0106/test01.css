@@ -1,0 +1,13 @@
+/* 조상과 후손 */
+ul li{
+  color: red;
+}
+
+/* 부모 자식 */
+#lecture>li{
+  border: 1px solid red;
+}
+
+ul{
+  background-color: powderblue;
+}
