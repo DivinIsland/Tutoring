@@ -1,9 +1,22 @@
-#parent{
-  /* border: 1px solid red; */
-  margin-top: 100px;
+body{
+  padding:30px;
+}
+#other, #parent{
+  border: 5px solid tomato;
 }
 
-#child{
-  background-color: powderblue;
-  margin-top: 50px;
+#large{
+  height:100000px;
+  background-color: tomato;
+}
+
+#me{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color:white;
+  background-color: black;
+  text-align: center;
+
 }
