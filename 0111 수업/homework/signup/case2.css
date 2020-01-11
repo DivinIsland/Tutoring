@@ -1,0 +1,40 @@
+body{
+  background-color: #f0f0f0;
+}
+p>a{
+  color: red;
+  text-decoration: none;
+}
+
+
+div input{
+  width: 500px;
+  height: 30px;
+}
+
+div{
+  margin-top: 20px;
+}
+
+
+
+.submit{
+  background-color: red;
+  font-size: 15px;
+  color: white;
+  height: 40px;
+  width: 505px;
+  margin-top: 20px;
+  
+}
+
+font{
+  color: orange;
+  font-weight: bolder;
+
+}
+
+.req{
+  width: 500px;
+  text-align: right;
+}
