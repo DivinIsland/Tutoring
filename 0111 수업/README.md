@@ -6,13 +6,13 @@
 
 + #1
 
-![20200111193405](C:\Users\최율겸\Desktop\20200111193405.jpg)
+![#1](C:\Users\최율겸\Desktop\Tutoring\0111 수업\#1.jpg)
 
 
 
 + #2
 
-![20200111193358](C:\Users\최율겸\Desktop\20200111193358.jpg)
+![#2](C:\Users\최율겸\Desktop\Tutoring\0111 수업\#2.jpg)
 
 
 
