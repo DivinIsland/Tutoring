@@ -1,22 +1,28 @@
 body{
   background-color: #f0f0f0;
 }
-p>a{
-  color: red;
-  text-decoration: none;
-}
+
 
 
 div input{
-  width: 500px;
+  width: 100%;
   height: 30px;
+  display: block;
+  margin-top: 8px;
 }
 
 div{
   margin-top: 20px;
 }
 
+.signup_form{
+  width: 510px;
+  display: inline-block;
+}
 
+.signup_main{
+  text-align: center;
+}
 
 .submit{
   background-color: red;
@@ -28,13 +34,24 @@ div{
   
 }
 
-font{
+span{
   color: orange;
   font-weight: bolder;
+}
+.form{
+  text-align: left;
+}
 
+p>a{
+  color: red;
+  text-decoration: none;
 }
 
 .req{
-  width: 500px;
+  width: 100%;
   text-align: right;
+}
+
+.signup_info{
+  text-align: left;
 }

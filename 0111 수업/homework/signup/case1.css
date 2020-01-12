@@ -6,7 +6,7 @@ h1{
   text-align: center;
 }
 
-div input{
+.form-group input{
   border:none;
   border-bottom: 2px solid gray;
   width: 400px;

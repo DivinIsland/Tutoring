@@ -1,0 +1,84 @@
+h1{
+  color: red;
+  text-align: center;
+}
+
+/* Declaration */
+/* Selector */
+.test{
+  /* Property */
+  background: red; /* Value */
+}
+
+/* 셀렉터의 종류
+1. 태그
+2. 클래스
+3. ID
+4. Property
+
+*/
+
+.box{
+  border: 1px solid gray;
+}
+
+.inbox{
+  padding: 5px !important;
+}
+
+#info{
+  font-weight: bold;
+}
+
+.test_info{
+  font-weight: 400;
+}
+
+input[type="text"]{
+  font-size: 20px;
+  color: red;
+}
+
+.input_class[type="text"]{
+background-color: powderblue;
+}
+
+.control_1, .control_2, .control_3{
+  width: 500px;
+  height: 200px;
+  background: orange;
+}
+
+.control_1, .control_common{
+  border:2px dashed purple;
+}
+
+.control_2{
+  border: 1px solid gray;
+}
+
+.control_3{
+  border: 1px solid red;
+}
+
+*{
+  margin: 10px;
+}
+
+.address:before{
+  content : 'hello';
+}
+
+.h2__test{
+  background: rgba(0,0,0,0.5);
+  color: white;
+  font-weight: bold;
+    /* 머터리얼 색상표 */
+  /* border-right: 3px solid blue;
+  border-bottom: 3px solid red;
+  border-color: purple;
+   */
+   
+   border: 10px dotted orange;
+
+}

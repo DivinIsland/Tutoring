@@ -1,0 +1,110 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  border: 1px solid gray;
+  /* display: inline-block; */
+
+  /* margin: 20px; */
+  padding: 10px;
+}
+
+/* 
+block element일때 발생
+마진 병합 현상
+ */
+
+ /* .box_bottom{
+   margin-top: 40px;
+ } */
+
+.index_section.top{
+  margin-bottom: 20px;
+}
+
+/* 마진병합은 section으로 잡자 */
+
+.text_box1{
+  width: 200px;
+  height: 200px;
+  border: 1px solid purple;
+
+  /* 마진 한방향씩 주고싶을때(4개)
+  위 오 아래 왼 */
+
+  /* 2개씩 줄때는
+  위 아래, 양옆 
+   */
+
+   /* 3개는 위, 양옆, 아래 */
+   /* 1개는 전부 다 */
+
+  margin: 30px 50px 20px 100px;
+  padding: 30px 50px 20px 100px;
+
+}
+
+.btn{
+  padding: 50px 100px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  
+}
+
+
+.height_box{
+  /* max-height: 100px; */
+  border: 1px solid gray;
+  /* min-width: 200px;
+  width: 200px;
+  max-width: 200px; */
+}
+
+.font__p{
+  /* text-align: justify; */
+  letter-spacing: 10px;
+  line-height: 30px;
+  text-shadow: 1px 1px 3px gray;
+}
+
+.font__link{
+  text-decoration: none;
+  color: black;
+}
+
+.font__link:hover{
+  text-decoration: underline;
+  color: blue;
+}
+
+.mousehover__box{
+  width: 200px;
+  height: 200px;
+  border: 1px solid gray;
+  transition: 2s;
+  opacity: 0.5;
+}
+
+.mousehover__box:hover{
+  background: brown;
+  border: 100px dotted white;
+  border-radius: 100%;
+}
+
+.shadow__box{
+  width: 200px;
+  height: 200px;
+
+  border: 1px solid gray;
+  margin: 10px;
+  box-shadow: 5px 5px 5px gray;
+}
+
+
