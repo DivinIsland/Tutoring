@@ -1,0 +1,55 @@
+*{
+  box-sizing: border-box;
+}
+
+#photo, #CEO, #intro{
+  /* border: 1px solid gray; */
+}
+
+/* photo */
+
+#photo{
+  width: 50%;
+  height: 800px;
+  float: left;
+}
+
+#night_photo{
+  height: 800px;
+  width: 100%;
+}
+
+
+/* ceo */
+#CEO{
+  width: 50%;
+height: 250px;
+float: right;
+}
+#name{
+  width: 200px;
+  text-align: center;
+}
+#position{
+  margin-left: 20px;
+  width: 200px;
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 3px solid powderblue;
+ 
+}
+
+
+/* intro */
+
+#intro{
+  width: 50%;
+  height: 550px;
+  float: right;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+}
