@@ -2,8 +2,9 @@
 
 
 
-<a href="http://divin1.netlify.com" target="_blank"></a>
+[](http://divin1.netlify.com)
 
 
 
-<a href="http://divin2.netlify.com" target="_blank"></a>
+[](divin2.netlify.com)
+
