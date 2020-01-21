@@ -1,0 +1,389 @@
+/* header */
+
+.header{
+  width: 100%;
+  height: 900px;
+  position: relative;
+  background-image: url(./diving\ \(8\).jpg)  
+}
+.header_container{
+  width: 30%;
+  height: 40%;
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid gray; */
+}
+.header_title{
+  font-size: 70px;
+  color: white;
+  padding: 20px;
+  font-family: 'Courgette', cursive;
+}
+.header_sub{
+  color: white;
+  opacity: 0.8;
+  font-size: 17px;
+  line-height: 25px;
+  font-family: 'Amiri', serif;
+}
+.emp{
+  font-weight: bold;
+}
+.header_btn{
+  border: none;
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px;
+  margin: 50px;
+  font-family: 'Cardo';
+}
+
+/* section1 */
+
+.section1{
+  width: 100%;
+  height: 900px;
+  background-color: floralwhite;
+  position: relative;
+}
+
+.section1_container{
+  width: 70%;
+  height: 80%;
+  background-color: white;
+ 
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid gray; */
+}
+
+.sect1_bg{
+  width: 100%;
+  height: 45%;
+  background-image: url(./landscape-4763730_1280.jpg);
+  background-size: contain;
+}
+
+.sect1_content{
+  width: 100%;
+  height: 55%;
+  padding: 20px;
+  text-align: center;
+}
+
+.sect1_title{
+  font-size: 30px;
+  padding: 20px;
+  font-family: 'Amiri';  
+}
+
+.sect1_sub{
+  color: gray;
+  opacity: 0.7;
+  padding-bottom: 20px;
+  font-family: 'Amiri';  
+  
+}
+
+.sect1_des{
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+  margin: 20px;
+  padding-top: 25px;
+  color: gray;
+  opacity: 0.7;
+  line-height: 25px;
+  text-align: justify;
+  font-family: 'Cardo';
+}
+
+/* section2 */
+
+.section2{
+  width: 100%;
+  height: 300px;
+  
+  position: relative;
+  background-image: url(./sunrise-1756274_1920.jpg);
+  background-position: 90% 90%;
+}
+.section2_container{
+  width: 70%;
+  height: 70%;
+  /* border: 1px solid gray; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sect2_content{
+  width: calc(100%/3);
+  height: 100%;
+  /* border: 1px solid gray; */
+  text-align: center;
+  float: left;
+}
+
+.sect2_title{
+  font-size: 40px;
+  font-family: 'Cardo';
+  font-weight: bold;
+  color: white;
+}
+.sect2_des{
+  padding: 30px;
+  color: white;
+  opacity: 0.4;
+  text-align: justify;
+  font-family: 'Courgette';
+}
+.sect2_btn{
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+  border: 2px solid rgba(128, 128, 128, 0.5);
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.sect2_content2, .sect2_content3{
+  border-left: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+/* section3 */
+
+.section3{
+  width: 100%;
+  height: 750px;
+  background-color: floralwhite;
+  position: relative;
+}
+
+.section3_container{
+  width: 70%;
+  height: 80%;
+  /* border: 1px solid gray; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sect3_content1{
+  width: 45%;
+  height: 100%;
+  background-color: white;
+  float: left;
+}
+
+.sect3_content2{
+  width: 45%;
+  height: 100%;
+  background-color: white;
+  float: right;
+}
+
+.sect3_bg1{
+  width: 100%;
+  height: 40%;
+  background-image: url(./land\ \(1\).jpg);
+  background-position: 1% 10%;
+  
+}
+
+.sect3_bg2{
+  width: 100%;
+  height: 40%;
+  background-image: url(./land\ \(2\).jpg);
+  background-position: 70% 70%;
+  
+}
+
+.sect3_con{
+  text-align: center;
+  padding: 30px;
+}
+
+.sect3_con_title{
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 15px;
+}
+
+.sect3_con_sub{
+  color: gray;
+  opacity: 0.7;
+  padding: 15px;  
+}
+
+.sect3_con_des{
+  color: gray;
+  opacity: 0.7;
+  padding: 20px;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+  text-align: justify;
+  line-height: 25px;
+  font-family: "Cardo";
+}
+
+/* section 4 */
+
+.section4{
+  width: 100%;
+  height: 300px;  
+  position: relative;
+  background-image: url(./sunrise-1756274_1920.jpg);
+  background-position: 90% 90%;
+}
+.section4_container{
+  width: 70%;
+  height: 70%;
+  /* border: 1px solid gray; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.sect4_title{
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  font-family: 'Amiri';
+}
+
+.sect4_des{
+  font-size: 20px;
+  color: gray;
+  text-align: justify;
+  line-height: 25px;
+  opacity: 0.8;
+  font-family: 'Cardo';
+  padding: 10px;
+}
+
+/* footer */
+
+.footer{
+  width: 100%;
+  height: 900px;
+  background-color: floralwhite;
+  position: relative;
+}
+
+.footer_container{
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+.form_title{
+  width: 80%;
+  text-align: center;
+  padding: 40px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  margin: auto;
+  font-size: 40px;
+  font-family: 'Amiri';
+}
+
+.form_group{
+  width: 80%;
+  padding: 30px 0px;
+  margin: auto;
+  
+}
+
+.textbox{
+  width: 95%;
+  color: gray;
+  background-color: rgba(128, 128, 128, 0.1);
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+
+}
+
+.form_name{
+  width: 50%;
+  float: left;
+}
+
+.form_email{
+  width: 50%;
+  float: right;
+}
+
+.form_depart{
+  width: 100%;
+  float: left;
+}
+
+.form_message{
+  width: 100%;
+  float: left;
+}
+#messagebox{
+  height: 150px;
+  width: 100%;
+}
+
+.form_group label{
+  padding: 20px 0px;
+}
+
+.form_btn{
+  width: 50%;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px; 
+}
+
+#form_button{
+  padding: 20px;
+  background-color: skyblue;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+}
+
+#department{
+  color: black;
+  width: 100%;
+}
+
+.form_label{
+  font-family: 'Amiri';  
+}
+
+.bottom_des{
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  left: 50%;
+  top: 96%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Cardo';
+}
+
+a{
+  color: skyblue;
+  text-decoration: underline !important;
+
+}

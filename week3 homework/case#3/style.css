@@ -73,7 +73,7 @@
 
 .main1_content_bg1{
   width: 100%;
-  height: 45%;  
+  height: 52%;  
   background-image: url(./car2.jpg);
   background-size: contain;
   background-repeat: no-repeat;  
@@ -81,7 +81,7 @@
 
 .main1_content_bg2{
   width: 100%;
-  height: 45%;
+  height: 52%;
   background-image: url(./car3.jpg);
   background-size: contain;
   background-repeat: no-repeat;
