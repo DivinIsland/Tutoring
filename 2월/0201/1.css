@@ -1,0 +1,178 @@
+h1{
+  color:red;
+}
+
+.float__box{
+  position: relative;
+  /* min-height: 200px; */
+  border: 1px solid red;
+  padding: 30px;
+  
+}
+.float__box:after{
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.box{
+  border: 1px solid blue;
+  float: left;
+  min-height: 100px;
+  margin: auto;
+  width:calc(100% / 3);
+}
+
+.box_container{
+  /* position: absolute; 
+  left: 50%; 
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width:80%; */
+}
+
+img{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* 브라우저 대응이 된다 */
+  transition: .5;
+}
+
+img:hover{
+transform: rotate(250deg);
+}
+
+/* 트랜스파일러, 태스크러너(속성 번역) */
+
+.nav{
+  padding: 10px;
+  border: 1px solid #ececec;
+}
+
+
+.menu__link:hover{
+  color: white;
+  background: green;  
+}
+
+.menu__link{
+  padding: 10px;
+  background: #ececec;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+}
+
+/* ------------------------ */
+
+.menu__control_1{
+  
+  background: rgb(35, 35, 35);
+}
+
+.menu__control_1:after{
+  content:'';
+  display: block;
+  clear: both;
+}
+
+.menu__link_1{
+  display: inline-block;
+  float: left;
+  padding: 10px;
+  color: white;
+  transition: 0.3s;
+}
+
+.menu__link_1:hover{
+  background: black;
+}
+
+.menu__link_1:active{
+  background: green;
+}
+
+.menu__link_1.active{
+  /* background: green; */
+}
+
+
+/* ------------------------ */
+
+.dropdown{
+  margin: 5px;
+  border: 1px solid red;
+}
+
+.dropdown__button{
+  padding: 5px;
+  background: green;
+}
+
+.dropdown__nav{
+  display: none;
+}
+.dropdown:hover .dropdown__nav{
+  display: block;
+}
+
+/* ------------------------ */
+
+a[target="_blank"]{
+  color: red;
+}
+
+input[type="password"]{
+  color: red;
+}
+
+.form__input{
+  width: 100%;
+  border-radius: 3px;
+  border: 0;
+  padding: 5px;  
+}
+
+.form{
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #ececec;
+}
+
+
+.form__group{
+  margin-bottom: 15px;
+}
+
+.label__title{
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input__box{
+  position: relative;
+}
+
+.input__box:after{
+  position: absolute;
+  content:'';
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 2px;
+  background: blue;
+  width: 0;
+  transition: 0.3s;
+}
+
+.input__box:hover:after{
+  width: 100%;
+}
+
+html{
+  font-size: 30px;
+}
+
+.rem__text{
+  font-size: 2rem;
+}

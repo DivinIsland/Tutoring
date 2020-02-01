@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+  #parent, #other{
+    border: 5px solid tomato;
+    
+  }
+  #grand{
+    border: 5px solid gray;
+    position: relative;
+  }
+
+  #parent{
+    
+  }
+
+  #me{
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+  
+  }
+  </style>
+</head>
+<body>
+
+  <div id="other">other</div>
+  <div id="grand">grand
+  <div id="parent">
+    parent
+    <div id="me">me</div>
+  </div>
+  </div>
+  
+</body>
+</html>
+
+absolute를 지정한 엘리먼트는
+부모 태그중 가장 가까운 relative 포지션의 엘리먼트를 기준으로
+위치를 잡는다.

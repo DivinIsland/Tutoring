@@ -1,0 +1,19 @@
+.parent_section{
+  min-height: 300px;
+  background: orange;
+  padding: 10px;
+}
+
+.parent_section:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.img__box{
+  width: 200px;
+  height: 200px;
+  background: blue;
+  margin: 5px;
+  float: left;
+}

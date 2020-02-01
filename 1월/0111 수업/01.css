@@ -1,0 +1,9 @@
+.form-group{
+  padding:5px;
+  border-bottom: 1px solid gray;
+}
+
+.form-box{
+  /* border: 1px solid gray; */
+  margin-top: 50px
+}

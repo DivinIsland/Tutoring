@@ -1,0 +1,25 @@
+img{
+  vertical-align: top;
+}
+
+.area{
+  width: 800px;
+  margin: 0 auto;
+  border: 3px dashed red;
+  *zoom: 1;
+}
+
+/* .area:after{
+  content:'';
+  display:block;
+  clear:both;
+} */
+
+.thumb{
+  border: 1px solid black;
+  float: left;
+}
+
+.cls{
+ 
+}

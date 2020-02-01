@@ -1,0 +1,38 @@
+/* 조상과 후손 */
+
+/* 부모 자식 */
+body{
+  font-size: 2rem;
+}
+#lecture>li{
+  border: 1px solid red;
+}
+
+
+
+.px{
+  font-size: 20px;
+  text-align: justify;
+  border: 1px solid gray;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.a{
+  text-align: center;
+  border: 1px solid gray;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.b{
+  text-align: end;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.c{
+  font-weight: bold;
+}
+
+.d{
+  line-height: 2;
+  font: bold 3rem/2 arial
+}

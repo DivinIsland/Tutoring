@@ -1,0 +1,58 @@
+*{
+  box-sizing: border-box;
+}
+.header{
+  height :50px;
+  background-color: gray;
+
+}
+.nav{
+  width: 10%;
+  height: 300px;
+  float: left;
+  background-color: red;
+}
+
+
+.upper_con_left{
+width: 30%;
+height: 100px;
+ float: left;
+ background-color: orange;
+}
+
+.upper_con_mid{
+  width: 30%;
+height: 100px;
+ float: left;
+ background-color: yellow;
+}
+
+.upper_con_right{
+  width: 30%;
+height: 100px;
+ float: right;
+ background-color: green;
+}
+
+.middle_con{
+width: 90%;
+height: 100px;
+float:left;
+background-color: blue;
+}
+
+.lower_con{
+float:left;
+width: 90%;
+height: 100px;
+background-color: purple;
+}
+
+.footer{
+float:left;
+width: 100%;
+height :50px;
+background-color: gray;
+}
+

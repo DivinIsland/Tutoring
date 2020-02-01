@@ -1,0 +1,64 @@
+/* float 해제 */
+
+.center{
+  width: 50%;
+  margin: auto;
+  border: 3px solid green;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.center::after{
+  content:'';
+  display: block;
+  clear: both;
+}
+
+.content_box{
+  float:right;
+  width: 30px;
+  height: 30px;
+  border: 1px solid purple;
+}
+
+.son_out{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: red;
+  right: -30px;
+}
+
+div p span{
+  color: red;
+}
+
+div ul li a{
+  color: brown;
+}
+
+div a{
+  color: aqua;
+}
+/* 자식 선택자 */
+
+span > a{
+  color: tomato;
+}
+
+/* > 직계자손 */
+
+
+/* 인접 형제선택자 ( + ) */
+
+.brother_1 + .brother_2{
+  color: green;
+}
+
+/* 일반 형제 선택자 ~ */
+
+.brother_1 ~ .brother_3{
+  color: red;
+}
