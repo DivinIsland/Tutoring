@@ -1,0 +1,57 @@
+@mixin floatclear{
+  &:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+}
+
+@mixin calcwidth($n){
+  width: calc(100% / #{$n});
+}
+
+
+div{
+  // border: 1px solid gray;
+  text-align: center;
+  font-size: 50px;
+  
+}
+
+.header{
+ 
+  min-height: 100px;;
+}
+
+.main-container{
+  margin: 10px 0;
+ 
+  .mid{
+    
+    
+    @include calcwidth(3);
+    
+    float: left;
+    padding-right: 5px;
+    &:last-child{
+      padding-right: 0;
+    }
+  }
+  @include floatclear;
+  
+}
+
+
+.footer{
+  
+  min-height: 100px;
+}
+
+.content{
+  background-color: #ececec;
+  min-height: 400px;
+}
+
+.bggray{
+  background-color: #ececec;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./1.css">
+
+
+</head>
+
+<body>
+
+  <hr class="hr">
+
+  <div class="tooltip">
+    Hover over me
+    <span class="tooltip__text bottom">
+      Tooltip Text
+    </span>
+  </div>
+
+
+  <!-- NOTE: -->
+
+  <hr>
+
+  <div class="image__container">
+    <div class="box">
+      <div class="content">
+        <div class="img_box">
+          <img
+            src="https://lh3.googleusercontent.com/proxy/6mEiWz7ITk8RB6n2_FLmcHFZeb1ajXHr0L8Klts8x5Ij1kuyrXCe9AXmXbZ1Gi1VJ5PCYQiA3-_RELDcJAErSbPsvURpie5gbi2k3nhdX3Vs"
+            alt="" class="image">
+        </div>
+        <p>hello</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="content">
+        <div class="img_box">
+          <img src="https://www.autodaily.co.kr/news/photo/201902/407643_36142_389.jpg" alt="" class="image">
+        </div>
+        <p>programming</p>
+      </div>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <!-- NOTE: 이미지 호버 오버레이 -->
+
+  <div class="image__container">
+    <div class="overlay_box plain">
+      <div class="overlay_img_box">
+        <img src="https://www.autodaily.co.kr/news/photo/201902/407643_36142_389.jpg" alt="" class="image">
+      </div>
+      <div class="overlay">
+        <div class="text">hello world!</div>
+      </div>
+    </div>
+
+    <div class="overlay_box opacity">
+      <div class="overlay_img_box">
+        <img src="https://www.autodaily.co.kr/news/photo/201902/407643_36142_389.jpg" alt="" class="image">
+      </div>
+      <div class="overlay">
+        <div class="text"><button>hello world!</button></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- NOTE: 이미지 호버 다이렉션 -->
+  <hr>
+
+  <div class="image__container">
+    <div class="overlay_box">
+      <div class="img_box">
+        <img src="https://www.autodaily.co.kr/news/photo/201902/407643_36142_389.jpg" alt="" class="image">
+      </div>
+      <div class="direction_overlay top">
+        <div class="direction_text">
+          Direction Hover
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay_box">
+      <div class="img_box">
+        <img src="https://www.autodaily.co.kr/news/photo/201902/407643_36142_389.jpg" alt="" class="image">
+      </div>
+      <div class="direction_overlay bottom">
+        <div class="direction_text">
+          Direction Hover
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<!-- 버튼 스타일링 -->
+
+  <hr>
+
+  <button class="button green">
+    초록
+  </button>
+
+  <button class="button orange">
+    오렌지
+  </button>
+
+  <button class="button border-red disable">
+    보더-레드
+  </button>
+
+  <div class="button hover">
+    <span class="hover_text">Hover</span>
+  </div>
+
+  
+
+<hr>
+
+
+
+</body>
+
+</html>

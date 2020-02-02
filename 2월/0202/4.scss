@@ -1,0 +1,62 @@
+$shallow_gray:#ececec;
+
+
+@mixin floatclear{
+  &:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+}
+// Function
+
+body{
+  background-color: $shallow_gray;
+}
+
+h1{
+  font-size: 30px;
+  font-weight: bold;
+  .sub_title{
+    font-size: 20px;    
+  }
+}
+
+.container{
+  border: 1px solid blue;  
+  @include floatclear;
+  &-hello{
+    height: 100px;
+    background-color: purple;
+  }
+  
+}
+
+$boxfontsize: 30px;
+$boxlineheight : 30px;
+$text: 'hello';
+
+.box{
+  float: left;
+  width: 30%;
+  height: 200px;
+  background: orange;
+  margin: 5px;
+  font-size: #{$boxfontsize} / #{$boxlineheight};
+
+  &.#{$text}{
+    color: red;
+
+  }
+
+  &-#{$text}{
+    color: tomato;
+  }
+  @at-root .list{
+    width: 200px;  
+}
+}
+
+$family: unquote("Droid+Sans");
+@import url("http://fonts.googleapis.com/css?family=#{$family}");
+

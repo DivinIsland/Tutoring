@@ -1,0 +1,107 @@
+
+html{
+  background: gray;
+  height: 100%;
+  margin: 0 auto;
+}
+
+
+div, span{
+  border: 1px solid white;
+}
+
+/* header */
+
+.header{
+  width: 80%;
+  min-height: 700px;  
+  margin:auto;
+  margin-top: 50px;
+}
+
+.profile{
+  width: 100%;
+  min-height: 350px; 
+  position: relative;
+}
+
+.profile_image{
+  
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;  
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.profile_img{
+  width: 250px;
+  height: 250px;
+}
+
+.intro{
+  margin: auto;
+  width: 90%;
+  min-height: 150px;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px;
+}
+.sns{
+  margin: auto;
+  width: 50%;
+  min-height: 100px;
+  text-align: center;  
+}
+
+.fab, .fas{
+  margin: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.5);  
+  border-radius: 100%;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+
+/*  main  */
+
+.main_container{
+  width: 80%;
+  min-height: 900px;
+  margin: auto;
+}
+
+.mainbox{
+  width: calc(100% / 3);
+  min-height: 900px;
+  float: left;
+  margin-top: 50px;
+  position: relative;
+}
+
+.main_container:after{
+  display: block;
+  content:'';
+  clear: both;
+}
+
+.box1, .box2, .box3{
+  width: 70%;
+  margin: auto;
+}
+
+.box1{
+  min-height: 500px;
+}
+
+.box3{
+  min-height: 300px;
+}
+
+.box2{
+  min-height: 300px;
+}

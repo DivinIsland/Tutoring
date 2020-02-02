@@ -1,0 +1,21 @@
+.grid_container{
+  display: grid;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+
+}
+
+.grid-item{
+  background: gray;
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid_container1{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 20% 50% 30%;
+  grid-template-rows: 200px;
+}
