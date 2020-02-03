@@ -1,4 +1,4 @@
-# week3
+# week3 homework link
 
 
 
@@ -13,4 +13,8 @@
 [case#5](https://divin5.netlify.com)
 
 [case#6](https://divin6.netlify.com)
+
+[case#7](https://divin7.netlify.com)
+
+[case#8](https://divin8.netlify.com)
 
