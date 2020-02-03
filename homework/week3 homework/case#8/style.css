@@ -1,0 +1,294 @@
+.section1 {
+  width: 100%;
+  height: 937px;
+  z-index: 1;
+}
+
+.section1::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 937px;
+  background-image: url(bg.jpg);
+  z-index: -1;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.header {
+  color: white;
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.header:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.intro {
+  float: left;
+  font-size: 25px;
+  font-family: Aleo;
+}
+
+.nav {
+  float: right;
+}
+
+.nav div {
+  float: left;
+  margin: 0 20px;
+  font-size: 20px;
+  font-family: Courgette;
+}
+
+.nav:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.section1-main {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.section1-main:before {
+  content: '';
+  width: 98%;
+  height: 1px;
+  background: white;
+  opacity: 0.4;
+  top: -70px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.section1-title {
+  margin-top: 150px;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+.section1-content-container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.section1-content {
+  margin-top: 100px;
+  width: calc(100% / 3);
+  min-height: 200px;
+  color: white;
+  text-align: center;
+  float: left;
+  font-family: Cardo;
+  letter-spacing: 3px;
+  border-right: 1px solid gray;
+}
+
+.section1-content .fab {
+  font-size: 40px;
+  color: darkcyan;
+  margin: 15px;
+}
+
+.section1-content span {
+  display: inline-block;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family: Courgette;
+}
+
+.section1-content:last-child {
+  border: 0;
+}
+
+.section1-button {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.section1-button input {
+  background-color: transparent;
+  font-size: 20px;
+  color: darkcyan;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 3px solid darkcyan;
+  letter-spacing: 3px;
+}
+
+.section2-container {
+  width: 80%;
+  min-height: 500px;
+  margin: auto;
+}
+
+.section2-container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.section2-content {
+  width: 50%;
+  min-height: 550px;
+  float: left;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.section2-content-img {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.section2-content-title {
+  color: gray;
+  font-family: Cardo;
+  font-size: 30px;
+  width: 70%;
+  margin: 20px auto;
+  font-weight: bold;
+  line-height: 35px;
+}
+
+.section2-content-des {
+  color: gray;
+  font-family: Amiri;
+  width: 90%;
+  margin: 20px auto;
+  line-height: 25px;
+}
+
+.section2-content-button input {
+  background-color: transparent;
+  font-size: 20px;
+  color: green;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 3px solid green;
+  letter-spacing: 3px;
+}
+
+.section3 {
+  background-color: RGB(108, 192, 145);
+  position: relative;
+  min-height: 600px;
+}
+
+.section3-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.section3-title {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-family: Courgette;
+  margin: 60px auto;
+}
+
+.section3-form-container {
+  width: 100%;
+}
+
+.section3-form-container input, .section3-form-container textarea {
+  margin: 20px 0px;
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 15px;
+  opacity: 0.5;
+  padding: 15px;
+}
+
+.section3-form-container textarea {
+  height: 120px;
+}
+
+.section3-form-container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+label {
+  color: white;
+  font-size: 20px;
+  font-family: Amiri;
+}
+
+.form-name {
+  width: 47%;
+  float: left;
+}
+
+.form-email {
+  width: 47%;
+  float: right;
+}
+
+.form-message {
+  width: 100%;
+  float: left;
+}
+
+.form-button {
+  width: 100%;
+  text-align: center;
+  float: left;
+}
+
+.form-button input {
+  width: 18%;
+  background-color: transparent;
+  font-size: 20px;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 3px solid white;
+  letter-spacing: 3px;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  background-color: RGB(108, 192, 145);
+  min-height: 80px;
+}
+
+@media screen and (max-width: 800px) {
+  .section2-content {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
