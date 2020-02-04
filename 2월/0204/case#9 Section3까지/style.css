@@ -1,0 +1,92 @@
+.section1-background {
+  position: absolute;
+  border: 1px solid gray;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  z-index: -5;
+}
+
+.section1-bg {
+  width: 100%;
+  height: 100%;
+}
+
+.section1 {
+  min-height: 900px;
+  position: relative;
+}
+
+header {
+  color: white;
+}
+
+header span {
+  display: inline-block;
+  margin: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+header nav {
+  margin: 30px;
+  float: right;
+}
+
+header .fas {
+  margin-right: 5px;
+}
+
+header:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.section1-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: 'Courgette';
+}
+
+.section1-logo {
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  border: 1px dotted rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.section1-logo i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section1-title {
+  font-size: 60px;
+  margin: 20px;
+}
+
+.section1-subtitle {
+  font-family: Roboto;
+  margin-bottom: 20px;
+}
+
+.section1-btn {
+  background: transparent;
+  padding: 15px 25px;
+  border-radius: 15px;
+  margin-top: 15px;
+  color: white;
+  font-family: merriweather;
+}
+/*# sourceMappingURL=style.css.map */
