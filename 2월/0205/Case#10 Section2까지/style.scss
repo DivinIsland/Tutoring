@@ -1,0 +1,131 @@
+@mixin floatclear{
+  &:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+}
+
+div{
+  // border: 1px solid gray;
+}
+
+header{
+
+  height: 100px;
+  background-color: black;
+
+  .header-container{
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    @include floatclear;
+  }
+  .title{
+    color: #e3464a;
+    font-family: dancing script;
+    font-size: 30px;
+    float: left;
+    margin: 30px;
+  }
+
+  nav{
+    width: 25%;
+    color: white;
+    float: right;
+    margin: 35px 20px;
+    @include floatclear;
+    span{
+      float: left;
+      margin: 0px 25px;
+      font-size: 20px;
+      font-family: cardo;
+    }
+  }
+}//header
+
+//section1
+
+.section1{
+
+  background-image: url(bg.jpg);
+  background-position: 0 30%;
+  height: 750px;
+  position: relative;
+
+  .container{
+    width: 38%;
+    height: 30%;
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+  }
+
+  .title{
+    color: white;
+    font-size: 50px;
+    font-family: courgette;
+  }
+
+  .button{
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .btn{
+    background: transparent;
+    color: white;
+    padding: 15px 35px;
+    font-family: roboto;
+  }
+
+}//section1
+
+//section2
+
+.section2{
+
+height: 600px;
+position: relative;
+
+.container{
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title{
+  color: #e3464a;
+  font-family: cardo;
+  font-size: 40px;
+  padding: 30px 0px;
+}
+
+.subtitle{
+  font-family: amiri;
+  padding: 50px 0px;
+  line-height: 30px;
+
+}
+
+.button{
+  padding: 30px 0px;
+}
+
+.btn{
+  border: 3px solid #e3464a;
+  color: #e3464a;
+  padding: 15px 15px;
+  background: transparent;
+}
+
+
+
+
+
+
+}//section2

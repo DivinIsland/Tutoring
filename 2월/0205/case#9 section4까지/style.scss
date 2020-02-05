@@ -282,4 +282,55 @@ header{
 
 } //
 
+//section 4
 
+.section4{
+
+  height: 500px;
+  background-image: url(bg2.jpg);
+  background-position: 80% 80%;
+  position: relative;
+
+  .container{
+    width: 50%;
+    height: 70%;
+    // border: 1px solid gray;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+
+  .title{
+   font-size: 60px;
+   font-family: Amiri;
+   margin-top: 20px;
+  }
+
+  .subtitle{
+    margin: 30px auto;
+    width: 80%;
+    font-size: 20px;
+    font-family: cardo;
+  }
+
+  .btn{
+    color: white;
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 15px 35px;
+    border: 2px solid white;
+    font-family: roboto;
+  }
+
+  
+
+}//section 4
+
+.section4-bottom{
+  height: 150px;
+  background-image: url(bg2.jpg);
+  background-position: 50% 78%;
+}
