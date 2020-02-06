@@ -6,6 +6,7 @@
 }
 }
 
+
 .section1{
 background-image: linear-gradient(25deg, #432698, #794caf, #aa73c6, #da9ddd);
 min-height: 600px;
@@ -75,3 +76,169 @@ position: relative;
 
 }//section1-container
 
+
+
+// section2
+
+
+.section2{
+  min-height: 600px;
+  position: relative;
+
+  .container{
+   width: 1400px;
+  height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: cardo;
+    @include floatclear;
+  }
+
+  .contentbox{
+    width: 50%;
+    float: left;
+    position: relative;
+    height: 100%;
+  }
+
+  .contentbox:after{
+    content: '';
+    display: block;
+    width: 2px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 97%;
+    background-color: rgba(128,128,128,0.5);
+    margin-left: 15px;;
+    
+  }
+
+  .checkbox{
+    float: right;
+    width: 47%;
+    height: 100%;
+  }
+
+  .title{
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  .des{
+    width: 90%;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .btn{
+    border-radius: 20px;
+    border: 1px solid gray;
+    padding: 10px 25px;
+    background-color: transparent;
+  }
+
+  .check{
+    margin: 25px 0px;
+  }
+
+  .check:first-child{
+    margin: 0;
+  }
+
+  .fas{
+    margin-right: 10px;
+    color: #12bf8f;
+  }
+
+} //section2
+
+// section3
+
+.section3{
+
+  min-height: 1900px;
+  background-color:  #fafafa;
+  border-top: 2px solid rgba(128,128,128,0.3);
+  position: relative;
+
+  .container{
+    width: 70%;
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .contentbox{
+    height: 28%;
+    @include floatclear;
+
+    .image{
+      float: left;
+      width: 40%;
+      height: 100%;
+    }
+
+    .expl{
+      float: right;
+      width: 60%;
+      height: 100%;
+      font-family: merriweather;
+      background-color: white;
+      border-bottom: 2px solid rgba(128,128,128,0.5);
+      padding: 80px;
+
+      .title{
+        font-size: 50px;
+        margin-bottom: 40px;
+      }
+
+      .des{
+        font-size: 20px;
+        text-align: justify;
+        margin-bottom: 50px;
+      }
+      .btn{
+        background-color: transparent;
+        border-radius: 30px;
+        padding: 20px 35px;
+        border: 1px solid gray;
+      }
+
+    }
+
+
+  }
+
+  .spacebox{
+    height: 4%;
+  }
+
+  .buttonbox{
+    height: 4%;
+    text-align: center;
+    .btn{
+      border-radius: 35px;
+      background-color: transparent;
+      border: 2px solid gray;
+      padding: 30px 45px;
+      
+    }
+
+  }
+
+}//section3
+
+
+
+
+
+
+
+div{
+  // border: 1px solid gray;
+}
