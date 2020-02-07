@@ -1,0 +1,335 @@
+@mixin floatclear{
+  &:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+}
+
+
+
+header{
+
+  height: 100px;
+  background-color: black;
+
+  .header-container{
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    @include floatclear;
+  }
+  .title{
+    color: #e3464a;
+    font-family: dancing script;
+    font-size: 30px;
+    float: left;
+    margin: 30px;
+  }
+
+  nav{
+    width: 25%;
+    color: white;
+    float: right;
+    margin: 35px 20px;
+    @include floatclear;
+    span{
+      float: left;
+      margin: 0px 25px;
+      font-size: 20px;
+      font-family: cardo;
+    }
+  }
+}//header
+
+//section1
+
+.section1{
+
+  background-image: url(bg.jpg);
+  background-position: 0 30%;
+  height: 750px;
+  position: relative;
+
+  .container{
+    width: 38%;
+    height: 30%;
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+  }
+
+  .title{
+    color: white;
+    font-size: 50px;
+    font-family: courgette;
+  }
+
+  .button{
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .btn{
+    background: transparent;
+    color: white;
+    padding: 15px 35px;
+    font-family: roboto;
+  }
+
+}//section1
+
+//section2
+
+.section2{
+
+height: 600px;
+position: relative;
+
+.container{
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title{
+  color: #e3464a;
+  font-family: cardo;
+  font-size: 40px;
+  padding: 30px 0px;
+}
+
+.subtitle{
+  font-family: amiri;
+  padding: 50px 0px;
+  line-height: 30px;
+
+}
+
+.button{
+  padding: 30px 0px;
+}
+
+.btn{
+  border: 3px solid #e3464a;
+  color: #e3464a;
+  padding: 15px 15px;
+  background: transparent;
+}
+
+
+
+
+}//section2
+
+// section3
+
+.section3{
+
+  background-color: #f3f3f3;
+  min-height: 600px;
+  position: relative;
+
+  .container{
+    width: 1200px;
+    min-height: 450px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    // border: 1px solid gray;
+    @include floatclear;
+  }
+
+  .contentbox{
+    width: 42%;
+    height: 100%;
+    // border: 1px solid gray;
+    float: left;
+  }
+
+  .contentbox:last-child{
+    float: right;
+  }
+
+  .title{
+    color: #e3464a;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: aleo;
+  }
+
+  .img{
+    width: 100%;
+    height: 50%;
+    // border: 1px solid gray;
+  }
+
+  .image{
+    width: 100%;
+    height: 100%;
+  }
+  .des{
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin: 20px 0px;
+    letter-spacing: 4px;
+    font-family: cardo;
+  }
+
+
+
+}//section3
+
+//section4
+
+.section4{
+  background-color: #ffffff;
+  position: relative;
+  height: 600px;
+  font-family: amiri;
+
+  .container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    @include floatclear;
+    width: 1200px;
+  }
+
+  .contentbox{
+    width: 30%;
+    height: 100%;
+    float: left;
+    margin-right: 40px;
+    
+  }
+  .contentbox:last-child{
+    margin-right: 0;
+  }
+
+  .icon{
+    color: rgba(128,128,128,0.9);
+    font-size: 30px;
+  }
+
+  .title{
+    color: #e3464a;
+    font-size: 35px;
+    margin: 20px 0px;
+  }
+  .subtitle{
+    font-size: 25px;
+    color: rgba(128,128,128,0.8);
+    line-height: 20px;
+  }
+  .btn{
+    margin: 30px 0px;
+    border: 1px solid #e3464a;
+    color: #e3464a;
+    background: transparent;
+    padding: 10px 25px;
+  }
+
+
+
+}//section4
+
+
+//section5
+
+.section5
+{
+  background: RGB(229,71,75);
+  min-height: 700px;
+  position: relative;
+  font-family: lato;
+
+  .container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 80%;
+    @include floatclear;
+  }
+
+  .title{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    float: left;
+  }
+
+  .name{
+    width: 48%;
+    float: left;
+  }
+
+  .email{
+    width: 48%;
+    float: right;
+  }
+
+  .message{
+    width: 100%;
+    float: left;
+    height: 20%;
+  }
+
+  .button{
+    width: 100%;
+    float: left;
+  }
+
+  .copyright{
+    float: left;
+    color: rgba(255,255,255,0.6);
+  }
+  input{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    height: 40px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .message .form{
+    height: 100%;
+  }
+
+  .form[type="text"]{
+    border: 1px solid rgba(255,255,255,0.6);
+  }
+
+  input::placeholder{
+    color: white;
+    opacity: 0.5;
+  }
+
+  .btn{
+    width: 17%;
+    
+  }
+  
+
+ 
+  
+  div{
+    margin: 20px 0px;
+  }
+
+
+}//section5
+
+div{
+  // border: 1px solid gray;
+}
