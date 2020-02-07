@@ -225,18 +225,127 @@ position: relative;
       border-radius: 35px;
       background-color: transparent;
       border: 2px solid gray;
-      padding: 30px 45px;
+      padding: 15px 25px;
       
     }
-
   }
 
 }//section3
 
+//section4
+
+.section4{
+
+  min-height: 700px;
+  position: relative;
+  font-family: Cardo;
+
+  .container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    @include floatclear;
+
+    .content-box{
+      width: 53%;
+      height: 100%;
+      float: left;
+      border-right: 2px solid rgba(128,128,128,0.2);
+      padding: 20px;
+    }
+
+    .info-box{
+      width: 45%;
+      height: 100%;
+      float: right;
+      li{
+        margin-bottom : 40px;
+      }
+      i{
+        margin-right: 20px;
+        color: green;
+        font-size: 2rem;
+      }
+    }
+
+    .title{
+      width: 100%;
+      font-size: 3rem;
+      margin: 20px 0px;
+      float: left;      
+    }
+
+    .des{
+      font-size: 1.5rem;
+      width: 100%;
+      margin: 20px 0px;
+      float: left;
+    }
+
+    .name{
+      width: 48%;
+      float: left;
+          
+    }
+    .email{
+      width: 48%;
+      float: right;
+      
+    }
+    .message{
+      width: 100%;
+      float: left;      
+      margin: 20px 0px;
+
+      input{
+        height: 8rem;
+      }
+    }
+
+    .button{
+      width: 100%;
+      float: left;
+      .btn{
+        color: black;
+        border-radius: 20px;
+        background-color: transparent;
+        border: 2px solid gray;
+        padding: 15px 25px;
+
+      }
+
+    }
+
+    input[type="text"]{
+      width: 100%;
+      padding: 15px;
+      border: 1px solid black;
+    }
+
+
+  }
 
 
 
 
+
+
+
+
+}//section4
+
+// footer
+
+.footer{
+  min-height: 100px;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+}
 
 
 div{

@@ -222,6 +222,113 @@
   border-radius: 35px;
   background-color: transparent;
   border: 2px solid gray;
-  padding: 30px 45px;
+  padding: 15px 25px;
+}
+
+.section4 {
+  min-height: 700px;
+  position: relative;
+  font-family: Cardo;
+}
+
+.section4 .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+}
+
+.section4 .container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.section4 .container .content-box {
+  width: 53%;
+  height: 100%;
+  float: left;
+  border-right: 2px solid rgba(128, 128, 128, 0.2);
+  padding: 20px;
+}
+
+.section4 .container .info-box {
+  width: 45%;
+  height: 100%;
+  float: right;
+}
+
+.section4 .container .info-box li {
+  margin-bottom: 40px;
+}
+
+.section4 .container .info-box i {
+  margin-right: 20px;
+  color: green;
+  font-size: 2rem;
+}
+
+.section4 .container .title {
+  width: 100%;
+  font-size: 3rem;
+  margin: 20px 0px;
+  float: left;
+}
+
+.section4 .container .des {
+  font-size: 1.5rem;
+  width: 100%;
+  margin: 20px 0px;
+  float: left;
+}
+
+.section4 .container .name {
+  width: 48%;
+  float: left;
+}
+
+.section4 .container .email {
+  width: 48%;
+  float: right;
+}
+
+.section4 .container .message {
+  width: 100%;
+  float: left;
+  margin: 20px 0px;
+}
+
+.section4 .container .message input {
+  height: 8rem;
+}
+
+.section4 .container .button {
+  width: 100%;
+  float: left;
+}
+
+.section4 .container .button .btn {
+  color: black;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 2px solid gray;
+  padding: 15px 25px;
+}
+
+.section4 .container input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid black;
+}
+
+.footer {
+  min-height: 100px;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  line-height: 100px;
 }
 /*# sourceMappingURL=style.css.map */
