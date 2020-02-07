@@ -1,0 +1,135 @@
+header {
+  position: fixed;
+  background: transparent;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  z-index: 2;
+}
+
+header .menu {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}
+
+@-webkit-keyframes bg-fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bg-fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes container-fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes container-fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.section1 {
+  background: rgba(0, 0, 0, 0.5);
+  min-height: 937px;
+}
+
+.bg:after {
+  position: absolute;
+  content: '';
+  display: block;
+  height: inherit;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.bg {
+  min-height: inherit;
+  background-image: url(./busan.jpg);
+  position: relative;
+  color: white;
+  -webkit-animation-name: bg-fadein;
+          animation-name: bg-fadein;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  font-family: courgette;
+}
+
+.bg .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation-name: container-fadein;
+          animation-name: container-fadein;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  z-index: 2;
+}
+
+.bg .container .title {
+  font-size: 5rem;
+  text-align: center;
+  margin: 30px 0px;
+}
+
+.bg .container .des {
+  font-size: 1.2rem;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.bg .container .button {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.bg .container .btn {
+  padding: 20px 30px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.section2 {
+  height: 200px;
+}
+/*# sourceMappingURL=style.css.map */
