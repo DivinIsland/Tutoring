@@ -1,0 +1,97 @@
+@mixin floatclear{
+  &:after{
+    content:'';
+    display: block;
+    float: clear;
+  }
+}
+@mixin position-center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+body{
+  background-color: #f4f4f4;
+
+// 이게 왜 안될까?
+.big .button{
+  width: 50%;
+  padding: 10px 20px;
+}
+
+}
+
+// global area
+
+.header:before{
+  content:'';
+  display: block;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  
+}
+
+.header{
+  height: 20em;
+  min-height: 75vh;
+  background-image: url(handwriting-1362879_1920.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: courgette;
+
+  position: relative;
+  .inner{
+    @include position-center;
+    text-align: center;
+    h1{
+      font-size: 5rem;
+      color: white;
+      padding: 30px 0;
+      border-bottom: 3px solid white;
+    }
+    p{
+      font-size: 1.5rem;
+      color: white;
+      padding: 20px;
+    }
+  }
+
+}//header
+
+.wrap{
+  width: 64em;
+  border: 1px solid gray;
+  margin: auto;
+  padding: 3em 0 2em 0;
+  font-family: Cardo;
+  
+  .intro{
+    text-align: center;
+    .intro-icon{
+      font-size: 10rem;
+    }
+
+    h2{
+      font-size: 3.5rem;
+      margin-bottom: 2rem;
+    }
+
+    p{
+      font-size: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    ul{
+      margin-bottom: 2rem;
+      .button{
+        border: 1px solid gray;
+        padding: 10px 25px;
+      }
+    }
+  }
+  
+
+}
