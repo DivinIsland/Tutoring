@@ -1,0 +1,105 @@
+@mixin floatclear{
+  &:after{
+  content:'';
+  display: block;
+  clear: both;
+}
+}
+body{
+  padding: 10px;
+  font-family: Amiri;
+  @include floatclear;
+  border: 1px solid gray;
+}
+
+header{
+  width: 100%;
+  padding: 20px;
+  color: white;
+  background: purple;
+  float: left;
+  h1{
+    font-size: 3rem;
+  }
+}
+
+nav{
+  width: 30%;
+  margin: 10px 0px;
+  float: left;
+  li{
+    background: #33b5e5;
+    color: white;
+    font-size: 1.5rem;
+    margin: 10px 0px;
+  }
+}
+
+
+
+  .main{
+    float: left;
+    width: 40%;
+    padding: 20px 0 20px 20px;
+    h1{
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+   
+    p{
+      width:80%;
+      font-size: 1.5rem;
+    }
+  }
+  .subdes{
+    width: 30%;
+    float: right;
+    background: #33b5e5;;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    .q, .a{
+      padding: 10px;
+    }
+    .q{
+      font-size: 2rem;
+    }
+  }
+
+
+footer{
+  text-align: center;
+  width: 100%;
+  float: left;
+  background: #0099cc;
+  color: white;
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .main{
+    width: 70%;
+  }
+  .subdes{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 768px){
+
+nav{
+  width: 100%;
+}
+
+.main{
+  width: 100%;
+}
+
+.subdes{
+  width: 100%;
+}
+
+}

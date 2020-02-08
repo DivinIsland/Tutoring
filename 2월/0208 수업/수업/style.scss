@@ -1,0 +1,154 @@
+@mixin calcwidthfloat($size){
+  float: left;
+  width: calc(#{$size});
+}
+
+@mixin floatclear{
+  &:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+}
+
+@mixin positionheightcenter{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin positionwidthcenter{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin positioncentercenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin font($fontsize:14px, $color:black){
+font-family: Amiri;
+font-size: $fontsize;
+color: $color;
+@content;
+}
+
+$headerheight: 70px;
+
+body{
+  padding-top:$headerheight;
+}
+.main__section{
+  border: 1px solid red;
+  padding: 30px;
+
+  .main__section_title{
+    margin-bottom: 20px;
+    @include font(40px, #333){
+      font-weight: bold;
+    }
+    &.center{
+      text-align: center;
+    }
+  }
+  .main__section_subtitle{
+    margin-bottom: 20px;
+    @include font(20px, #818181);
+    
+  }
+}
+
+.wrap{
+  position: relative;
+  width: 800px;
+  margin: auto;
+  border: 1px solid blue;
+   min-height: 400px;  
+  
+}
+
+.content{
+  position: relative;
+ 
+  &.centercenter{
+    @include positioncentercenter;
+
+  }
+  &.heightcenter{
+    @include positionheightcenter;
+
+  }
+  &.widthcenter{
+    @include positionwidthcenter;
+
+  }
+}
+
+.main__header{
+  border: 1px solid red;
+  height: $headerheight;
+  position: fixed;
+  left:0;
+  top:0;
+  width: 100%;
+  background: black;
+  z-index: 500;
+
+  .main__logo{
+    @include positionheightcenter;
+    left: 20px;
+  }
+
+  .main__logo_link{  
+    @include font(20,red){
+      font-weight: bold;
+    }
+  }
+
+  .menu__box{
+    @include positionheightcenter;
+    right: 20px;
+    }
+
+    .menu__content{
+      color: white;
+      cursor: pointer;
+    }
+}
+
+.img__box{
+  @include floatclear;
+  .img{
+    @include calcwidthfloat(100% / 3);
+  }
+}
+
+@mixin positiondisable{
+  position: relative;
+  left: 0;
+  top: 0;
+  transform: none;
+}
+
+@media screen and (max-width:1000px){
+
+  .wrap{
+    width: 100%;
+  }
+
+  .img__box{
+  .img{
+    @include calcwidthfloat(100% / 2);
+  }
+  }
+
+  .content{
+    &.centercenter{
+      @include positiondisable;
+    }
+  }
+}
