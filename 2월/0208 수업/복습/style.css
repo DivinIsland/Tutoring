@@ -2,8 +2,8 @@ body {
   background-color: #f4f4f4;
 }
 
-body .big .button {
-  width: 50%;
+body .big.button {
+  width: 100%;
   padding: 10px 20px;
 }
 
@@ -77,12 +77,15 @@ body .big .button {
   margin-bottom: 3rem;
 }
 
+.wrap .intro a {
+  display: inline-block;
+}
+
 .wrap .intro ul {
   margin-bottom: 2rem;
 }
 
 .wrap .intro ul .button {
   border: 1px solid gray;
-  padding: 10px 25px;
 }
 /*# sourceMappingURL=style.css.map */

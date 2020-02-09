@@ -13,31 +13,7 @@ header .menu {
   margin-right: 20px;
 }
 
-@-webkit-keyframes bg-fadein {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes bg-fadein {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes container-fadein {
+@-webkit-keyframes fadein {
   0% {
     opacity: 0;
   }
@@ -46,7 +22,7 @@ header .menu {
   }
 }
 
-@keyframes container-fadein {
+@keyframes fadein {
   0% {
     opacity: 0;
   }
@@ -85,10 +61,10 @@ header .menu {
   width: 100%;
   height: 937px;
   position: absolute;
-  -webkit-animation-name: bg-fadein;
-          animation-name: bg-fadein;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   z-index: 0;
@@ -100,10 +76,10 @@ header .menu {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation-name: container-fadein;
-          animation-name: container-fadein;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   z-index: 2;
