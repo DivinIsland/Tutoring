@@ -26,6 +26,10 @@ body {
   color: #818181;
 }
 
+.main__section:first-child {
+  margin-top: 70px;
+}
+
 .wrap {
   position: relative;
   width: 800px;
