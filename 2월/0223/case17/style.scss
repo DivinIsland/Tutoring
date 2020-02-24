@@ -1,0 +1,382 @@
+@import "../../../base/main";
+
+@mixin hovereffect{
+  transition: .3s;
+&:hover{
+ 
+  opacity: 0.5;
+  text-decoration: none;  
+  @content;
+}
+}
+
+@mixin floatclear{
+  &:after{
+    content:'';
+    display:block;
+    clear:both;
+  }
+}
+
+@mixin positioncenter{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//mixin
+
+
+
+//keyframes
+
+.empha{
+  color: gold;
+}
+
+
+
+.label{
+  display: block;
+  text-align: left;
+  width: 100%;
+  font-size: 13px;
+  font-family: cardo;
+  letter-spacing: 2px;
+  color: white;
+}
+
+
+
+//common
+
+.header{
+  
+  padding: 30px;  
+  position: fixed;
+  width: 100%;
+  min-width: 850px;
+  
+  z-index: 1000;  
+
+
+.logo-img{
+  width: 230px;
+  height: 50px;
+  @include hovereffect;
+}
+
+.header-logo{
+  display: inline-block;
+}
+
+.header-listbox{
+  display: inline-block;
+  position: absolute;
+  right:0;
+  top: 50%;
+  transform: translateY(-50%);
+  
+}
+
+.header-li{
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.header-list-item{
+  color: black;
+  font-family: Amiri;
+  @include hovereffect;  
+  
+}
+
+
+
+} //header
+
+.intro{
+  
+  height: 100vh;
+  position: relative;
+  
+
+
+  .logo{
+    width: 300px;
+    height: 80px;   
+    @include positioncenter;
+  }
+
+  .img-logo{
+    width: 100%;
+    height: 100%;    
+  }  
+
+  .video-box{   
+    width: 80%;
+    @include positioncenter();
+  }
+
+  #video{
+    width: 100%;
+    
+  }
+
+
+
+
+
+}// intro
+
+.reservation{
+
+  .reservation-title{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    font-family: Aleo;
+    letter-spacing: 5px;
+  }
+
+  .chinese-character{
+    font-size: 12px;
+  }
+
+  
+
+  .reservation-area{
+    padding: 30px;
+    background-color: #141414;
+    @include floatclear;
+  }
+
+  .reservation-wrap{
+    max-width: 1200px;
+    margin:auto;
+  }
+
+  $form-area-width:80%;
+
+  .form-area{
+    width:$form-area-width;    
+    float: left;
+    margin-right: 1%;
+    @include floatclear();
+
+  }
+
+  .check-in-area{
+    width: 30%;    
+    float: left;   
+  
+   
+  }
+
+  .checkin-input{
+    margin-top: 10px;
+    height: 50px;
+   
+  }
+
+  .undecide-box{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 10px;
+    
+  }
+
+  .undecide-des{
+    color: white;
+  }
+
+  .number-area{
+    width: 55%;
+    float: left;
+    @include floatclear();
+  }
+  .number-box{
+    float: left;
+    width: calc(100% / 3);
+  }
+
+  .select-num{
+    width: 95%;    
+    margin-top: 10px;
+    height: 50px;
+  }
+
+  .search-area{
+    width: 15%;
+    float: left;
+  }
+  .search-btn{
+    background-color: transparent;
+    padding: 30px;
+    color: gold;
+    border: 2px solid gold;
+    width: 100%;
+    @include hovereffect{
+      background-color: gold;
+      color: black;
+      opacity: 1;
+    }
+    
+  }
+
+
+
+
+
+
+  .link-area{
+    width:99% - $form-area-width;
+    
+    float: left;
+    text-align: center;    
+  }
+
+  .modify{
+    background-color: #e1e1e1;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    font-family: cardo;
+    margin-bottom: 10px;
+    @include hovereffect{
+      background-color: transparent;
+      color: white;
+      opacity: 1;
+    }
+  }
+
+  .package{
+    background-color: #ac8c41;
+    border: 1px solid #ac8c41;
+    padding: 20px;
+    color: white;
+    font-family: cardo;
+    @include hovereffect{
+      background-color: transparent;
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 950px){
+    .media-width-change{
+      width: 100%;
+      margin: 10px 0;      
+    }
+  }
+  
+  
+
+}//reservation
+
+@keyframes img-moving{
+0%{
+  background-image: url("image/aboutus/about\ img\ 1.jpg");
+  
+}
+
+15%{
+  background-image: url("image/aboutus/about\ img\ 1.jpg");
+  
+}
+34%{
+  background-image: url("image/aboutus/about\ img\ 2.jpg");
+  
+}
+
+50%{
+  background-image: url("image/aboutus/about\ img\ 2.jpg");
+
+}
+
+67%{
+  background-image: url("image/aboutus/about\ img\ 3.jpg");
+ 
+}
+
+90%{
+  background-image: url("image/aboutus/about\ img\ 3.jpg");
+ 
+}
+  100%{
+    background-image: url("image/aboutus/about\ img\ 1.jpg");
+   
+  }
+
+
+
+}
+
+.aboutus{
+  background-color:#232323;
+  padding: 50px;
+  
+  .wrap{    
+    height: inherit;
+    @include floatclear();
+  }
+
+  .img-area{    
+    width: 50%;    
+    position: relative;    
+    float: right;
+    height: inherit; 
+    padding: 30px;
+  
+    animation-name: img-moving;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    background-size: cover;
+  }
+    
+    
+    
+    
+  
+
+  
+
+  .intro-area{
+    color: white;
+    font-family: Amiri;
+    width: 50%;
+    
+    float: right;
+  }
+
+  .about-title{
+    font-size: 60px;
+    color: gold;
+  }
+  .about-subtitle{
+    margin: 10px 0;
+    color: gold;
+    font-size: 20px;
+  }
+
+  .bigspace{
+    content:'';
+    display: block;
+    margin: 40px 0;
+  }
+
+  @media screen and (max-width: 950px){
+    .media-width-change{
+      width: 100%;
+      margin: 10px 0;      
+    }
+  }
+}//about us
+
+
+
+
+
+
+
+
+//media query
