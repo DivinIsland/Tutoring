@@ -491,8 +491,19 @@ textarea:focus:-ms-input-placeholder {
   padding: 30px;
   position: fixed;
   width: 100%;
-  min-width: 850px;
   z-index: 100;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header.scrollactive {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .header .logo-img {
@@ -508,7 +519,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .header .header-logo {
-  display: inline-block;
+  float: left;
 }
 
 .header .header-listbox {
@@ -518,11 +529,12 @@ textarea:focus:-ms-input-placeholder {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  text-align: right;
 }
 
 .header .header-li {
   display: inline-block;
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
 .header .header-list-item {
@@ -535,6 +547,24 @@ textarea:focus:-ms-input-placeholder {
 .header .header-list-item:hover {
   opacity: 0.5;
   text-decoration: none;
+}
+
+.header .normal-invisible {
+  display: none;
+}
+
+@media screen and (max-width: 950px) {
+  .header .logo-img {
+    width: 150px;
+    height: 30px;
+  }
+  .header .header-li {
+    display: none;
+    margin-right: 20px;
+  }
+  .header .responsive-visible {
+    display: inline-block;
+  }
 }
 
 .intro {
@@ -557,6 +587,8 @@ textarea:focus:-ms-input-placeholder {
           animation-duration: 2s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .intro .img-logo {
@@ -575,6 +607,13 @@ textarea:focus:-ms-input-placeholder {
 
 .intro #video {
   width: 100%;
+}
+
+@media screen and (max-width: 950px) {
+  .intro .logo {
+    width: 440px;
+    height: 120px;
+  }
 }
 
 .reservation .reservation-title {
@@ -843,11 +882,12 @@ textarea:focus:-ms-input-placeholder {
   min-height: 500px;
   -webkit-animation-name: img-moving;
           animation-name: img-moving;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   background-size: cover;
+  background-position: center;
 }
 
 .aboutus .intro-area {
@@ -896,19 +936,21 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .stay .img-area {
-  width: 70%;
+  width: 65%;
   min-height: 700px;
   float: left;
   -webkit-animation-name: stay-moving;
           animation-name: stay-moving;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   background-size: cover;
+  background-position: center;
 }
 
 .stay .des-area {
+  margin-left: 5%;
   width: 30%;
   float: left;
   color: white;
@@ -918,7 +960,7 @@ textarea:focus:-ms-input-placeholder {
 .stay .des-position {
   margin: auto;
   margin-top: 50px;
-  width: 90%;
+  width: 100%;
 }
 
 .stay .stay-title {
@@ -939,11 +981,11 @@ textarea:focus:-ms-input-placeholder {
 .stay .morebtn {
   text-align: left;
   display: block;
-  width: 60%;
+  width: 50%;
   border: 1px solid white;
   color: white;
   padding: 20px;
-  margin: auto;
+  min-width: 150px;
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -958,5 +1000,206 @@ textarea:focus:-ms-input-placeholder {
     width: 100%;
     margin: 10px 0;
   }
+  .stay .img-area {
+    margin-top: 0;
+  }
+  .stay .morebtn {
+    width: 30%;
+  }
+}
+
+.experience {
+  background-color: #f1f1f1;
+  padding: 50px 0;
+}
+
+.experience .title-area {
+  padding: 20px;
+  text-align: center;
+  font-family: cardo;
+}
+
+.experience .exp-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.experience .exp-subtitle {
+  font-size: 15px;
+}
+
+.experience #myCarousel {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.news {
+  background-color: #f6f6f6;
+  padding: 50px;
+}
+
+.news .wrap {
+  width: 80%;
+  margin: auto;
+}
+
+.news .title-area {
+  text-align: center;
+  position: relative;
+}
+
+.news .news-title {
+  font-size: 30px;
+  font-family: amiri;
+  font-weight: bold;
+}
+
+.news .news-subtitle {
+  margin: 10px auto;
+}
+
+.news .news-view-all {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: aleo;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.news .news-view-all:hover {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.news .news-area {
+  margin: auto;
+}
+
+.news .news-date {
+  margin: 10px 0;
+  font-family: cardo;
+}
+
+.news .news-des {
+  font-weight: bold;
+  font-family: amiri;
+}
+
+.news .news-img {
+  width: 100%;
+  position: relative;
+}
+
+.news .card-img {
+  position: relative;
+}
+
+.news .card {
+  margin: 30px 0;
+}
+
+.news .card-img:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.news .logo-white {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 150px;
+  height: 30px;
+  opacity: 0;
+  z-index: 5;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.news .card:hover .card-img:after {
+  opacity: .8;
+}
+
+.news .card:hover .logo-white {
+  opacity: 1;
+}
+
+.instagram {
+  padding: 80px;
+  background-color: #141414;
+  color: white;
+}
+
+.instagram .title-area {
+  width: 70%;
+  margin: auto;
+}
+
+.instagram .insta-title {
+  text-align: center;
+  font-size: 40px;
+  font-family: dancing script;
+}
+
+.instagram .insta-subtitle {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.instagram .link-area {
+  text-align: center;
+}
+
+.instagram .insta-icon {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.instagram .card-area {
+  margin: 30px 0;
+}
+
+.instagram .insta-img {
+  width: 100%;
+}
+
+.instagram .insta-card {
+  padding: 0;
+}
+
+.instagram .insta-link {
+  color: white;
+  position: relative;
+  -webkit-transition: .10s;
+  transition: .10s;
+}
+
+.instagram .next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.instagram .next:hover {
+  left: 10px;
 }
 /*# sourceMappingURL=style.css.map */
