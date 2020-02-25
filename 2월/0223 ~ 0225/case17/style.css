@@ -879,7 +879,6 @@ textarea:focus:-ms-input-placeholder {
 .aboutus .img-area {
   width: 50%;
   float: right;
-  min-height: 500px;
   -webkit-animation-name: img-moving;
           animation-name: img-moving;
   -webkit-animation-duration: 8s;
@@ -890,10 +889,17 @@ textarea:focus:-ms-input-placeholder {
   background-position: center;
 }
 
+.aboutus .img-area:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
 .aboutus .intro-area {
   color: white;
   font-family: Amiri;
   width: 50%;
+  padding: 30px;
   float: right;
 }
 
@@ -937,7 +943,6 @@ textarea:focus:-ms-input-placeholder {
 
 .stay .img-area {
   width: 65%;
-  min-height: 700px;
   float: left;
   -webkit-animation-name: stay-moving;
           animation-name: stay-moving;
@@ -947,6 +952,12 @@ textarea:focus:-ms-input-placeholder {
           animation-iteration-count: infinite;
   background-size: cover;
   background-position: center;
+}
+
+.stay .img-area:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
 }
 
 .stay .des-area {
@@ -1181,6 +1192,52 @@ textarea:focus:-ms-input-placeholder {
   padding: 0;
 }
 
+.instagram .insta-card:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.instagram .instaimg1 {
+  background-image: url("image/instagram/insta (1).jpg");
+  background-size: cover;
+}
+
+.instagram .instaimg2 {
+  background-image: url("image/instagram/insta (2).jpg");
+  background-size: cover;
+}
+
+.instagram .instaimg3 {
+  background-image: url("image/instagram/insta (3).jpg");
+  background-size: cover;
+}
+
+.instagram .instaimg4 {
+  background-image: url("image/instagram/insta (4).jpg");
+  background-size: cover;
+}
+
+.instagram .instaimg5 {
+  background-image: url("image/instagram/insta (5).jpg");
+  background-size: cover;
+}
+
+.instagram .instaimg6 {
+  background-image: url("image/instagram/insta (6).jpg");
+  background-size: cover;
+}
+
+.instagram .instaimg7 {
+  background-image: url("image/instagram/insta (7).jpg");
+  background-size: cover;
+}
+
+.instagram .instaimg8 {
+  background-image: url("image/instagram/insta (8).jpg");
+  background-size: cover;
+}
+
 .instagram .insta-link {
   color: white;
   position: relative;
@@ -1201,5 +1258,25 @@ textarea:focus:-ms-input-placeholder {
 
 .instagram .next:hover {
   left: 10px;
+}
+
+.instagram .row:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+@media screen and (max-width: 992px) {
+  .instagram .insta-card {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .instagram .insta-card {
+    width: 100%;
+    float: left;
+  }
 }
 /*# sourceMappingURL=style.css.map */
