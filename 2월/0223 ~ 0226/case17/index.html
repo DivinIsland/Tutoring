@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  
+  <!-- 부가적인 테마 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  
+  <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+  
+  <!-- 구글폰트 -->
+  <link href="https://fonts.googleapis.com/css?family=Amiri|Aleo|Cardo|Courgette&display=swap" rel="stylesheet">
+
+
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div class="ani-dim"></div>
+
+  <header class="header">
+    <div class="header-logo">      
+      <p class="logo">
+        <a href="#" class="logo-link">
+          <img src="./image/logo/logo.png" alt="" class="logo-img">
+        </a>
+    </div>
+    
+
+    <div class="header-listbox">
+      <nav class="header-nav">
+        <ul class="header-ul">
+          <li class="header-li">
+            <a href="" class="header-list-link">
+              <span class="header-list-item">
+                about us
+              </span>
+            </a>
+          </li>
+          <li class="header-li">
+            <a href="" class="header-list-link">
+              <span class="header-list-item">
+                stay
+              </span>
+            </a>
+          </li>
+          <li class="header-li">
+            <a href="" class="header-list-link">
+              <span class="header-list-item">
+                experience
+              </span>
+            </a>
+          </li>
+          <li class="header-li">
+            <a href="" class="header-list-link">
+              <span class="header-list-item">
+                access
+              </span>
+            </a>
+          </li>
+          <li class="header-li">
+            <a href="" class="header-list-link">
+              <span class="header-list-item">
+                news/topics
+              </span>
+            </a>
+          </li>
+          <li class="header-li responsive-visible">
+            <a href="" class="header-list-link">
+              <span class="header-list-item">
+                <span class="empha">reservation</span>
+              </span>
+            </a>
+          </li>
+
+          <li class="header-li responsive-visible normal-invisible">
+            <a href="" class="header-list-link">
+              <span class="header-list-item">
+                <i class="fas fa-align-justify"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+  <!-- header -->
+
+  <section class="intro">
+
+    <div class="video-box">
+      <video id="video" muted="" webkit-playsinline="" playsinline="" loop="" autoplay="" class="vertical_center">
+        <source type="video/mp4" src="./image/intro/intro.mp4"></video>
+    </div>
+
+    <div class="logo">
+      <img src="./image/logo/logo.white.png" alt="" class="img-logo">
+    </div>
+
+  </section>
+  <!-- intro -->
+
+  <section class="reservation">
+
+    <div class="reservation-title">
+      <p class="empha">RESERVATION</p><br>
+      <p class="empha chinese-character">
+        事前豫約
+      </p>
+    </div>
+
+    <div class="reservation-area">
+      <div class="reservation-wrap">
+        <div class="form-area media-width-change">
+          <div class="check-in-area media-width-change">
+
+            <label for="" class="label">
+              check-in date
+            </label>
+            <input type="text" class="checkin-input">
+            <div class="undecide-box">
+              <input type="checkbox" class="undecide-check">
+              <span class="undecide-des">
+                undecided
+              </span>
+            </div>
+          </div>
+
+          <div class="number-area media-width-change">
+            <div class="number-box ">
+              <label for="" class="label">
+                number of nights
+              </label>
+              <select name="" id="" class="select-num">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+              </select>
+            </div>
+            <div class="number-box">
+              <label for="" class="label">
+                number of guests
+              </label>
+              <select name="" id="" class="select-num">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+              </select>
+            </div>
+            <div class="number-box">
+              <label for="" class="label">
+                number of rooms
+              </label>
+              <select name="" id="" class="select-num">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="search-area media-width-change">
+            <input type="button" class="search-btn" value="search">
+          </div>
+
+        </div>
+
+        <div class="link-area media-width-change">
+          <div class="link-box">
+            <div class="modify">
+              <p class="modify-des">view/modify/cancel reservations</p>
+            </div>
+            <div class="package">
+              <p class="package-des">
+                search by packages
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- reservation -->
+
+  <section class="aboutus">
+    <div class="wrap">
+      <div class="img-area media-width-change">
+        <div class="img-box">          
+        </div>
+      </div>
+
+      <div class="intro-area media-width-change">
+        <h2 class="about-title">
+          About us
+        </h2>
+        <p class="about-subtitle">
+          Villa Metsä KARUIZAWAについて
+          <br class="bigspace">
+        </p>
+
+        <p class="about-des">
+        豊かな森、澄んだ空気、穏やかな静けさ。<br>
+        非日常の日常を贅沢に愉しむ。
+        <br class="bigspace">
+        東京から新幹線でわずか1時間あまり、<br>
+        碓氷峠を超えた先の軽井沢町には雄大な自然が残されています。<br>
+        Villa Metsä KARUIZAWAでは、スカンジナビアンデザインの<br>
+        洗練されたログハウスで、大切な家族や仲間と、まるで自分たちの<br>
+        別荘に来たかのような贅沢な時間をお過ごしいただけます。<br>
+        自然との一体感を感じられる大きな窓、会話の輪を広げ、<br>
+        大切な人との距離を近づけるオープンキッチンのあるリビングダイニング。<br>
+        自然を感じ会話を愉しむ、非日常の日常をご堪能ください。
+        <br class="bigspace">
+        Magnificent woods, refreshing air and tranquility…<br>
+        Embrace the ordinary life in the extraordinary.
+        <br class="bigspace">
+        Just an hour train ride from Tokyo, Karuizawa is an area where great nature<br>
+        and beautiful scenery remain as they are. Villa Metsä <br>
+        KARUIZAWA is a Scandinavian-style log house family and friends<br>
+        can gather around to spend quality time together as if staying in the<br>
+        holiday house. With a wide-window that can integrate you into rich<br>
+        surrounding nature and a living dinning room and an open kitchen<br>
+        that can bring everyone closer, enjoy the nature and the conversation<br>
+        with your loved ones - something forgotten in our daily life.<br>
+        </p>
+
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+  <!-- about us -->
+
+  <section class="stay">
+    <div class="wrap">
+
+    <div class="img-area media-width-change">
+
+      <div class="stay-img"></div>
+
+    </div>
+
+    <div class="des-area media-width-change">
+      <div class="des-position">
+      
+      <h2 class="stay-title">stay</h2>
+      <p class="stay-subtitle">施設紹介</p>
+      <br class="bigspace">
+      <p class="stay-des">
+      Villa Metsä KARUIZAWAでは、それぞれコンセプトが<br>
+      異なる、3棟（6室）の洗練されたプライベート空間をお<br>
+      愉しみいただけます。<br>
+      <br class="bigspace">
+      
+      Villa Metsä KARUIZAWA consists of 3 building (6 rooms)<br>
+       of different concepts that provide the defined private<br> time.
+      </p>
+      <br class="bigspace">
+
+      <div class="stay-morebtn">
+        <a href="" class="morebtn">
+          view more →
+        </a>
+      </div>
+
+      </div>
+    </div>
+    </div>
+
+  </section>
+  <!-- stay -->
+
+  <section class="experience">
+    <div class="title-area">
+      <h2 class="exp-title">Experience</h2>
+      <h3 class="exp-subtitle">近隣観光／アクティビティ</h3>
+    </div>
+    <div class="img-area">
+      
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="image/experience/car (1).jpg" >
+          </div>
+      
+          <div class="item">
+            <img src="image/experience/car (2).jpg" >
+          </div>
+      
+          <div class="item">
+            <img src="image/experience/car (3).jpg" >
+          </div>
+          
+          
+        </div>
+    </div>
+
+  </section>
+  <!-- experience -->
+
+  <section class="news">
+    <div class="wrap">
+      <div class="title-area">
+        <h2 class="news-title">
+          News/Topics
+        </h2>
+        <h2 class="news-subtitle">
+          お知らせ
+        </h2>
+        <a href="" class="news-view-all">
+          View All
+        </a>
+      </div>
+
+
+      <div class="news-area">
+        <div class="row">
+          <div class="card b col-md-3">
+            <div class="card-img">
+              <img src="./image/news/news (1).jpg" alt="" class="news-img">
+              <img src="image/logo/logo.white.png" alt="" class="logo-white">
+            </div>
+            <div class="caption"><p class="news-date">2020.02.25</p>
+              <p class="news-des">Lorem, ipsum.</p>
+
+            </div>
+          </div>
+          <div class="card b col-md-3">
+            <div class="card-img">
+              <img src="./image/news/news (2).jpg" alt="" class="news-img">
+              <img src="image/logo/logo.white.png" alt="" class="logo-white">
+            </div>
+            <div class="caption"><p class="news-date">2020.02.25</p>
+              <p class="news-des">Lorem, ipsum.</p>
+
+            </div>
+          </div>
+          <div class="card b col-md-3">
+            <div class="card-img">
+              <img src="./image/news/news (3).jpg" alt="" class="news-img">
+              <img src="image/logo/logo.white.png" alt="" class="logo-white">
+            </div>
+            <div class="caption"><p class="news-date">2020.02.25</p>
+              <p class="news-des">Lorem, ipsum.</p>
+
+            </div>
+          </div>
+          <div class="card b col-md-3">
+            <div class="card-img">
+              <img src="./image/news/news (4).jpg" alt="" class="news-img">
+              <img src="image/logo/logo.white.png" alt="" class="logo-white">
+            </div>
+            <div class="caption"><p class="news-date">2020.02.25</p>
+              <p class="news-des">Lorem, ipsum.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- news -->
+
+  <section class="instagram">
+    <div class="wrap">
+      <div class="title-area">
+        <h2 class="insta-title">
+          Instagram
+        </h2>
+        <h3 class="insta-subtitle">
+          インスタグラム
+        </h3>
+      </div>
+
+      <div class="card-area">
+        <div class="row">
+          <div class="col-md-3 insta-card instaimg1">
+            
+          </div>
+          <div class="col-md-3 insta-card instaimg2">
+            
+          </div>
+          <div class="col-md-3 insta-card instaimg3">
+            
+          </div>
+          <div class="col-md-3 insta-card instaimg4">
+            
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 insta-card instaimg5">
+            
+          </div>
+          <div class="col-md-3 insta-card instaimg6">
+            
+          </div>
+          <div class="col-md-3 insta-card instaimg7">
+            
+          </div>
+          <div class="col-md-3 insta-card instaimg8">
+            
+          </div>
+        </div>
+        
+
+      </div>
+
+      <div class="link-area">
+        <div class="insta-box">
+<a href="https://instagram.com" class="insta-link">
+          <i class="insta-icon fab fa-instagram">
+          </i>       
+
+          <span class="follow">
+            follow us on instagram
+          </span>
+
+         <span class="insta-direction">
+          <span class="next">
+            →
+          </span>
+          </span>
+          </a>
+          
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- instagram -->
+
+  <section class="customer">
+    <div class="wrap">
+      <div class="access card media-width-change">
+        <a href="" class="card-link">
+        <h2 class="customer-title">
+          Access
+        </h2>
+        <h3 class="customer-subtitle">
+          アクセス
+        </h3>
+        <div class="customer-icon">
+          <i class="fas fa-home"></i>
+        </div>
+        <div class="link-area">
+          <span class="arrow">→</span>
+        </div>
+        </a>
+      </div>
+      <div class="faq card media-width-change">
+        <a href="" class="card-link">
+        <h2 class="customer-title">
+          FAQ
+        </h2>
+        <h3 class="customer-subtitle">
+          アクセス
+        </h3>
+        <div class="customer-icon">
+          <i class="fas fa-question"></i>
+        </div>
+        <div class="link-area">
+          <span class="arrow">→</span>
+        </div>
+        </a>
+      </div>
+      <div class="contact card media-width-change">
+        <a href="" class="card-link">
+        <h2 class="customer-title">
+          Contact
+        </h2>
+        <h3 class="customer-subtitle">
+          アクセス
+        </h3>
+        <div class="customer-icon">
+          <i class="fas fa-envelope"></i>
+          <i class="fas fa-phone"></i>
+        </div>
+        <div class="link-area">
+          <span class="arrow">→</span>
+        </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- customer -->
+
+  <footer class="footer">
+    <div class="wrap">
+    <div class="intro-area">
+      <div class="logo-area">
+        <img src="./image/logo/logo.white.png" alt="" class="logo">
+      </div>
+      <div class="company-info-area">
+        <p class="company-info">Divinisland Acodemy<br>
+        Busan, republic of Korea, Earth, Solaysystem
+        <br>
+        tel)010 8827 2943<br>
+        E-mail)choy0928@kakao.com
+        </p>
+      </div>
+      <div class="copyright-area">
+        <p class="copyright opacity">&copy;2020 Acodemy by Divinisland</p>
+      </div>
+    </div>
+    <div class="info-area">
+      <ul class="info-list">
+        <li class="contents-list hover-underline">
+          <span class="contents-head">Lore</span>
+          <span class="contents">nesciunt</span>
+        </li>
+        <li class="contents-list hover-underline">
+          <span class="contents-head">ipsum</span>
+          <span class="contents">commodi</span>
+        </li>
+        <li class="contents-list hover-underline">
+          <span class="contents-head">dolor</span>
+          <span class="contents">quia</span>
+        </li>
+        <li class="contents-list hover-underline">
+          <span class="contents-head">sit</span>
+          <span class="contents">recusandae</span>
+        </li>
+        <li class="contents-list hover-underline">
+          <span class="contents-head">amet</span>
+          <span class="contents">doloribus</span>
+        </li>
+        <li class="contents-list hover-underline">
+          <span class="contents-head">consectetur</span>
+          <span class="contents">veniam?</span>
+        </li>
+        <li class="contents-list hover-underline">
+          <span class="contents-head">adipisicing</span>
+          <span class="contents">Vel</span>
+        </li>
+        <li class="contents-list hover-underline">
+          <span class="contents-head">elit.</span>
+          <span class="contents">quo</span>
+        </li>
+        <li class="contents-list hover-underline">
+          <span class="contents-head">In,</span>
+          <span class="contents">qui</span>
+        </li>
+        <li class="contents-list hover-underline">
+          <span class="contents-head">culp</span>
+          <span class="contents">in</span>
+        </li>
+        <li class="contents-list hover-underline">
+          <span class="contents-head">neque</span>
+          <span class="contents">assumenda</span>
+        </li>
+      </ul>
+    </div>
+    <div class="social-area">
+      <ul class="social-list">
+        <li class="social">
+          <i class="fab fa-twitter"></i>
+          <span class="social-name">Twitter</span>
+        </li>
+        <li class="social">
+          <i class="fab fa-instagram"></i>
+          <span class="social-name">Instagram</span>
+        </li>
+        <li class="social">
+          <i class="fab fa-facebook-f"></i>
+          <span class="social-name">Facebook</span>
+        </li>
+      </ul>
+    </div>
+    </div>
+
+  </footer>
+  <!-- footer -->
+
+
+
+  <script>
+    $(window).on("scroll", function () {
+      if ($(window).scrollTop() > 700) {
+        $(".header").addClass("scrollactive");
+      } else {
+        $(".header").removeClass("scrollactive");
+      }
+    });
+
+    $('.carousel').carousel({
+        interval: 3000
+      })
+  </script>
+
+</body>
+
+</html>
+
+
+
