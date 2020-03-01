@@ -1,0 +1,50 @@
+@mixin floatclear{
+  &:after{
+    content:'';
+    display:block;
+    clear:both;
+    
+  }
+}
+
+.header{
+
+  position: fixed;
+  width: 100%;
+  padding: 40px;
+  background-color: #5fcec0;
+  color: white;
+
+  .wrap{
+    @include floatclear;
+  }
+
+  .title{
+    display: inline-block;
+    margin: 0;
+  }
+
+  .results{
+    right: 0;   
+    font-size: 36px;
+    float: right;
+  }
+
+}//header
+
+.main{
+  padding-top: 131px;;
+  
+  .container-fluid{
+    padding: 80px 40px;
+    border: 1px solid gray;
+  }
+
+  .wrap{
+    width: 1080px;
+    border: 1px solid gray;
+    margin: auto;
+  }
+
+
+}//main

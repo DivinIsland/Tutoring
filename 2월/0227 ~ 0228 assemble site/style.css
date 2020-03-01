@@ -1,0 +1,40 @@
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 40px;
+  background-color: #5fcec0;
+  color: white;
+}
+
+.header .wrap:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header .title {
+  display: inline-block;
+  margin: 0;
+}
+
+.header .results {
+  right: 0;
+  font-size: 36px;
+  float: right;
+}
+
+.main {
+  padding-top: 131px;
+}
+
+.main .container-fluid {
+  padding: 80px 40px;
+  border: 1px solid gray;
+}
+
+.main .wrap {
+  width: 1080px;
+  border: 1px solid gray;
+  margin: auto;
+}
+/*# sourceMappingURL=style.css.map */
