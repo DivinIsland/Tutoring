@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+  <!-- 부가적인 테마 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+  <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="container wrap">
+    <div class="row margin-top-150">
+      <div class="col-md-12">
+        <h1 class="title">Change Calculator</h1>
+      </div>
+    </div>
+
+    <!-- NOTE: 계산하는 폼 -->
+    <form action="" id="submitForm">
+      <div class="row margin-top-50">
+        <div class="col-md-8">
+          <input type="text" class="form-control" placeholder="please enter the amount." id="inputCalc" value="">
+        </div>
+
+        <div class="col-md-4">
+          <button class="btn btn-default" id="calBtn" type="submit">Calculation</button>
+          <button class="btn btn-default" id="resetBtn">Reset</button>
+        </div>
+      </div>
+
+
+      <div class="row margin-top-50">
+        <div class="col-md-12">
+
+          <div class="cal_row form-group row">
+            <label for="" class="cal_label col-md-2 control-label">총금액 :</label>
+            <div class="col-md-9">
+              <input type="text" class="cal_input form-control" name="amount">
+            </div>
+            <div class="col-md-1">
+              원
+            </div>
+          </div>
+
+          <div class="cal_row form-group row">
+
+            <label for="" class="cal_label col-md-2 control-label">만원권 :</label>
+            <div class="col-md-9">
+              <input type="text" class="cal_input form-control" name="tenThousand">
+            </div>
+            <div class="col-md-1">
+              개
+            </div>
+          </div>
+
+          <div class="cal_row form-group row">
+
+            <label for="" class="cal_label col-md-2 control-label">천원권 :</label>
+            <div class="col-md-9">
+              <input type="text" class="cal_input form-control" name="thousand">
+            </div>
+            <div class="col-md-1">
+              개
+            </div>
+          </div>
+
+          <div class="cal_row form-group row">
+
+            <label for="" class="cal_label col-md-2 control-label">오백원 :</label>
+            <div class="col-md-9">
+              <input type="text" class="cal_input form-control" name="fiveHundred">
+            </div>
+            <div class="col-md-1">
+              개
+            </div>
+          </div>
+
+          <div class="cal_row form-group row">
+
+            <label for="" class="cal_label col-md-2 control-label">백　원 :</label>
+            <div class="col-md-9">
+              <input type="text" class="cal_input form-control" name="hundred">
+            </div>
+            <div class="col-md-1">
+              개
+            </div>
+          </div>
+
+          <div class="cal_row form-group row">
+
+            <label for="" class="cal_label col-md-2 control-label">십　원 :</label>
+            <div class="col-md-9">
+              <input type="text" class="cal_input form-control" name="ten">
+            </div>
+            <div class="col-md-1">
+              개
+            </div>
+          </div>
+
+          <div class="cal_row form-group row">
+
+            <label for="" class="cal_label col-md-2 control-label">일　원 :</label>
+            <div class="col-md-9">
+              <input type="text" class="cal_input form-control" name="one">
+            </div>
+            <div class="col-md-1">
+              개
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+
+
+  
+
+  <script src="./index.js"></script>
+
+
+    
+
+</body>
+
+</html>
