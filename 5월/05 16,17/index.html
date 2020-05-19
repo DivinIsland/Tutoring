@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+  <!-- 부가적인 테마 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+  <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+
+  <div class="container wrap">
+    <div class="todoList margin-top-200">
+      <form action="" id="submitForm">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="title">ToDo List</h1>
+            <d
+            iv class="margin-top-20">
+            <label for="checkRadio">
+              <input type="radio" id="checkRadio" name="removeRadio" checked> checked
+            </label>
+
+            <label for="allRadio">
+              <input type="radio" id="allRadio" name="removeRadio"> all
+            </label>
+
+            <button type="button" class="btn btn-default" id="removeCheckBtn">Remove</button>
+
+            </d>
+          </div>
+
+
+          <div class="col-md-12 margin-top-30">
+            <input type="text" class="form-control" id="inputText" autocomplete="off">
+          </div>
+
+          <div class="col-md-12 margin-top-30">
+            <div class="todoList_container" id="todoListBox">
+              <!-- <div class="todoList_item">
+                <div class="todoList_text">오늘의 할일은 00이다.</div>
+                <div class="todoList_control_box">
+                  <label for="a1" class="todoList_check_label">
+                    <input type="checkbox" id="a1">
+                  </label>
+                  <span class="todoList_delete_icon glyphicon glyphicon-trash"></span>
+                </div>
+              </div>
+              <div class="todoList_item">
+                <div class="todoList_text">오늘의 할일은 00이다.</div>
+                <div class="todoList_control_box">
+                  <label for="" class="todoList_check_label">
+                    <input type="checkbox">
+                  </label>
+                  <span class="todoList_delete_icon glyphicon glyphicon-trash"></span>
+                </div>
+              </div>
+              <div class="todoList_item">
+                <div class="todoList_text">오늘의 할일은 00이다.</div>
+                <div class="todoList_control_box">
+                  <label for="" class="todoList_check_label">
+                    <input type="checkbox">
+                  </label><span class="todoList_delete_icon glyphicon glyphicon-trash"></span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+
+  <script src="./index.js"></script>
+
+</body>
+
+</html>
