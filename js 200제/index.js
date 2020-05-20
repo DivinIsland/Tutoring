@@ -217,7 +217,7 @@ function ex36() {
 
 
 function ex37() {
-  function drawChart(width=200, height=400){
+  function drawChart(width = 200, height = 400) {
     console.log(`${width} * ${height} 차트를 그립니다.`);
   }
 
@@ -225,14 +225,14 @@ function ex37() {
 
   drawChart();
 
-  function drawChart2(width = 200, height = width/2){
+  function drawChart2(width = 200, height = width / 2) {
     console.log(`${width} * ${height} 차트를 그립니다.`);
   }
 
   drawChart2(300);
   drawChart2();
 
-  
+
 
 }
 // ex37();
@@ -243,30 +243,30 @@ function ex37() {
 
 function ex38() {
 
-  function sum(...args){
+  function sum(...args) {
 
-  var total = 0;
-  for(var i = 0; i < args.length; i++){
-    total += args[i];
+    var total = 0;
+    for (var i = 0; i < args.length; i++) {
+      total += args[i];
+    }
+
+    console.log(args.indexOf(1))
+    return total;
   }
 
-  console.log(args.indexOf(1))
-  return total;
-  }
+  console.log(sum(1, 2, 4));
 
-  console.log(sum(1,2,4));
-
-  function sum2(a,b, ...others){
-    var total = a+b;
-    for(var i = 0; i < others.length; i++){
+  function sum2(a, b, ...others) {
+    var total = a + b;
+    for (var i = 0; i < others.length; i++) {
       total += others[i];
     }
     return total;
 
   }
 
-  console.log(sum2(1,2));
-  console.log(sum2(1,2,3,4));
+  console.log(sum2(1, 2));
+  console.log(sum2(1, 2, 3, 4));
 
 }
 // ex38();
@@ -279,9 +279,9 @@ function ex39() {
   var a = 10;
   console.log(a);
 
-  function print(){
+  function print() {
     var b = 20;
-    if(true){
+    if (true) {
       var c = 30;
     }
     console.log(c);
@@ -289,18 +289,18 @@ function ex39() {
 
   print();
 
-  
+
 
 
   var a = "global";
 
   console.log(a)
 
-  function print1(){
+  function print1() {
     console.log(a);
   }
 
-  function print2(){
+  function print2() {
     var a = "local";
     print1();
   }
@@ -312,7 +312,344 @@ function ex39() {
 // ex39();
 
 
+function ex40() {
+  hello();
+  function hello() {
+    console.log('hi')
+  }
 
+
+
+};
+// ex40();
+
+
+function ex41() {
+
+  if (true) {
+    var functionScopeValue = 'global';
+    let blockScopeValue = "local";
+  }
+
+  console.log(functionScopeValue);
+  // console.log(blockScopeValue);
+
+  let value = "바깥값";
+
+  if (true) {
+    console.log(value);
+    let value = "안쪽값";
+
+  }
+
+};
+// ex41();
+
+function ex42() {
+
+  const constUser = { name: 'c', age: 27 };
+  console.log(constUser.name, constUser.age)
+
+  constUser.name = 'hi';
+  constUser.age = 30;
+
+  console.log(constUser.name, constUser.age)
+
+
+
+}
+
+// ex42();
+
+
+
+function ex43() {
+
+  var person = 'aa';
+
+  function print() {
+    var person2 = 'bb';
+
+    function innerPrint() {
+      console.log(person);
+      console.log(person2);
+    }
+
+    innerPrint();
+    console.log('print finished');
+  }
+
+  print();
+
+  console.log('finished')
+
+
+
+
+};
+// ex43();
+
+
+
+function ex44() {
+
+  function createCounterClosure() {
+    let count = 0;
+
+    return {
+      increase: function () {
+        count++;
+      },
+
+      getCount: function () {
+        return count;
+      }
+    };
+  }
+
+  const counter1 = createCounterClosure();
+  const counter2 = createCounterClosure();
+
+  counter1.increase();
+  counter1.increase();
+  console.log(counter1.getCount());
+
+  counter2.increase();
+  console.log(counter2.getCount());
+
+};
+// ex44();
+
+
+
+function ex45() {
+  var user = {
+    name: 'aa'
+  };
+
+  let descriptor = Object.getOwnPropertyDescriptor(user, 'name');
+  console.log(descriptor)
+
+  let user2 = {};
+
+  Object.defineProperty(user2, 'name', {
+    value: 'hi',
+    enumerable: true,
+    configurable: true,
+    writable: false
+  });
+
+  console.log(user2.name);
+  user2.name = "bbo";
+  console.log(user2.name);
+
+  let user3 = {
+    name: 'aa',
+    toString() {
+      return this.name;
+    }
+  };
+
+  Object.defineProperty(user3, "toString", {
+    enumerable: false
+  });
+
+  for (key in user3) {
+    console.log(key, user3[key])
+  }
+
+  let user4 = {};
+  Object.defineProperty(user4, 'name', {
+    value: "aa",
+    configurable: false
+  });
+
+  delete user4.name;
+
+  console.log(user4)
+
+  Object.defineProperty(user4, "name", {
+    writable: false
+  })
+
+
+
+};
+// ex45();
+
+function ex46() {
+  let user = {};
+  Object.defineProperty(user, "age", {
+    get: function () {
+      return this._age;
+    },
+
+    set: function (age) {
+      if (age < 0) {
+        console.error("WTF?");
+      } else {
+        this._age = age;
+      }
+    },
+    enumerable: true
+
+  });
+
+
+  user.age = 10;
+  console.log(user.age);
+  user.age = -1;
+
+  let user2 = {
+
+    get name() {
+      return this._name;
+    },
+    set name(val) {
+      if (val.length < 3) {
+        throw new Error("3 letter");
+      }
+      this._name = val;
+    }
+  }
+
+  user2.name = 'harin';
+  console.log(user2.name);
+  user2.name = "ha";
+
+
+
+
+
+
+}; 
+// ex46();
+
+
+
+function ex47() {
+  const double = x => x+x;
+  console.log(double(4));
+
+  const add = (a,b) => a+b;
+  console.log(add(4,5));
+
+  const printArguments = () => {
+    console.log(arguments);
+  }
+
+  printArguments(1,2,3);
+
+  const sum = (...args) => {
+    let total = 0;
+    for(let i = 0; i < args.length; i++){
+      total += args[i];
+      console.log(args[i])
+    }
+    return total;
+  }
+  console.log(sum(1,2,3,4,5,6,7,9))
+
+  setTimeout( ()=> {
+    console.log('화살표 함수!');
+  }, 1000);
+
+
+
+};
+// ex47();
+
+
+
+function ex48() {
+
+  // const teacherJay = {
+  //   name :'J',
+  //   age : 30,
+  //   teachJavascript : function(student){
+  //     student.gainExp();
+  //   }
+  // }
+
+  // const studentBbo = {
+  //   name : 'Bbo',
+  //   age : 20,
+  //   exp : 0,
+  //   gainExp : function(){
+  //     this.exp++;
+  //   }
+  // }
+
+  // console.log(studentBbo.exp);
+  // teacherJay.teachJavascript(studentBbo);
+  // console.log(studentBbo.exp);
+
+  const studentProto = {
+    gainExp : function() {
+      this.exp++;
+    }
+  }
+
+  const harin = {
+    name : '하린',
+    age : 10,
+    exp : 0,
+    __proto__ : studentProto
+  };
+
+  const Bbo = {
+    name : "Bbo",
+    age : 20,
+    exp : 10,
+    __proto__ : studentProto
+  };
+
+  Bbo.gainExp();
+  harin.gainExp();
+  harin.gainExp();
+
+  console.log(harin);
+  console.log(Bbo);
+
+
+
+
+};
+// ex48();
+
+
+
+function ex49() {
+
+  function Teacher(name, age, subject){
+    this.name = name;
+    this.age = age;
+    this.subject = subject;
+
+    this.teach = function(student){
+      console.log(`${student}에게 ${subject}를 가르칩니다.`);
+    };
+  }
+
+  const jay = new Teacher('c', 30, 'js');
+  console.log(jay);
+  jay.teach("mmj");
+
+  console.log(jay.constructor);
+  console.log(jay instanceof Teacher);
+
+  const jay2 = Teacher('jay', 30, 'js');
+  console.log(jay2);
+  
+  console.log(age)
+  console.log(name)
+  console.log(subject)
+  
+
+
+
+};
+ex49();
 
 
 
