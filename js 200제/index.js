@@ -277,12 +277,14 @@ function ex38() {
 
 function ex39() {
   var a = 10;
+
   console.log(a);
 
   function print() {
     var b = 20;
+    var c;
     if (true) {
-      var c = 30;
+       c = 30;
     }
     console.log(c);
   }
@@ -290,9 +292,7 @@ function ex39() {
   print();
 
 
-
-
-  var a = "global";
+ var a = "global";
 
   console.log(a)
 
@@ -301,15 +301,17 @@ function ex39() {
   }
 
   function print2() {
-    var a = "local";
+    a = "local";
     print1();
   }
 
   print1();
   print2();
+  console.log(a);
 
 }
 // ex39();
+
 
 
 function ex40() {
@@ -625,13 +627,26 @@ function ex49() {
     this.name = name;
     this.age = age;
     this.subject = subject;
+    console.log(this,name,'hello')
 
     this.teach = function(student){
-      console.log(`${student}에게 ${subject}를 가르칩니다.`);
-    };
+      console.log(`${student}에게 ${subject}를 가르칩니다.`);      
+    };    
   }
 
-  const jay = new Teacher('c', 30, 'js');
+  const jay = new Teacher('c', 30, 'js'); 
+  /**
+   * 1. 함수가 실행이 됩니다.
+   * 2. new 키워드를 확인하면,
+   * 3. 함수가 객체로 실행이 됩니다.
+   * 4. 객체로 변하면서, this 변화된 객체인 자기 자신을 가르킵니다.
+   * 5. 자기자신의 {}객체 의 닷노테이션으로 매개변수들이 들어갑니다.
+   * 6. 예를들어 const Teacher = {};
+   * Teacher.name = "c";
+   * {...}
+   * 이런식으로 진행이 됩니다.
+   */
+
   console.log(jay);
   jay.teach("mmj");
 
@@ -639,17 +654,19 @@ function ex49() {
   console.log(jay instanceof Teacher);
 
   const jay2 = Teacher('jay', 30, 'js');
+  /**
+   * 기본적으로 함수 내에서의 this는 외부 렉시컬 스코프의 객체를 가리킵니다.
+   * 함수의 외부 렉시컬 스코프의 객체는 window object이므로,
+   * window.name = "Jay" 이런식으로 들어가게 됩니다.
+   */
   console.log(jay2);
   
   console.log(age)
   console.log(name)
   console.log(subject)
-  
-
-
 
 };
-ex49();
+// ex49();
 
 
 
