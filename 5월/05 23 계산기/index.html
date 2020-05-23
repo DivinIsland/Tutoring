@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <div class="jumbotron text-center">
+        <h1>계산기</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <input type="text" id="input-num">
+            </div>
+        </div>
+
+        <div class="row margin-top-30">
+            <div class="col-sm-3">
+                <button class="full-width" id="plus">+</button>
+            </div>
+            <div class="col-sm-3">
+                <button class="full-width" id="minus">-</button>
+            </div>
+            <div class="col-sm-3">
+                <button class="full-width" id="multiply">X</button>
+            </div>
+            <div class="col-sm-3">
+                <button class="full-width" id="division">/</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <button class="full-width margin-top-30" id="clear-btn">클리어</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <span class="full-width margin-top-30" id="result">
+                    결과
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
