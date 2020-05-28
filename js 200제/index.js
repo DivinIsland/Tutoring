@@ -284,7 +284,7 @@ function ex39() {
     var b = 20;
     var c;
     if (true) {
-       c = 30;
+      c = 30;
     }
     console.log(c);
   }
@@ -292,7 +292,7 @@ function ex39() {
   print();
 
 
- var a = "global";
+  var a = "global";
 
   console.log(a)
 
@@ -524,35 +524,35 @@ function ex46() {
 
 
 
-}; 
+};
 // ex46();
 
 
 
 function ex47() {
-  const double = x => x+x;
+  const double = x => x + x;
   console.log(double(4));
 
-  const add = (a,b) => a+b;
-  console.log(add(4,5));
+  const add = (a, b) => a + b;
+  console.log(add(4, 5));
 
   const printArguments = () => {
     console.log(arguments);
   }
 
-  printArguments(1,2,3);
+  printArguments(1, 2, 3);
 
   const sum = (...args) => {
     let total = 0;
-    for(let i = 0; i < args.length; i++){
+    for (let i = 0; i < args.length; i++) {
       total += args[i];
       console.log(args[i])
     }
     return total;
   }
-  console.log(sum(1,2,3,4,5,6,7,9))
+  console.log(sum(1, 2, 3, 4, 5, 6, 7, 9))
 
-  setTimeout( ()=> {
+  setTimeout(() => {
     console.log('화살표 함수!');
   }, 1000);
 
@@ -587,23 +587,23 @@ function ex48() {
   // console.log(studentBbo.exp);
 
   const studentProto = {
-    gainExp : function() {
+    gainExp: function () {
       this.exp++;
     }
   }
 
   const harin = {
-    name : '하린',
-    age : 10,
-    exp : 0,
-    __proto__ : studentProto
+    name: '하린',
+    age: 10,
+    exp: 0,
+    __proto__: studentProto
   };
 
   const Bbo = {
-    name : "Bbo",
-    age : 20,
-    exp : 10,
-    __proto__ : studentProto
+    name: "Bbo",
+    age: 20,
+    exp: 10,
+    __proto__: studentProto
   };
 
   Bbo.gainExp();
@@ -623,18 +623,18 @@ function ex48() {
 
 function ex49() {
 
-  function Teacher(name, age, subject){
+  function Teacher(name, age, subject) {
     this.name = name;
     this.age = age;
     this.subject = subject;
-    console.log(this,name,'hello')
+    console.log(this, name, 'hello')
 
-    this.teach = function(student){
-      console.log(`${student}에게 ${subject}를 가르칩니다.`);      
-    };    
+    this.teach = function (student) {
+      console.log(`${student}에게 ${subject}를 가르칩니다.`);
+    };
   }
 
-  const jay = new Teacher('c', 30, 'js'); 
+  const jay = new Teacher('c', 30, 'js');
   /**
    * 1. 함수가 실행이 됩니다.
    * 2. new 키워드를 확인하면,
@@ -660,7 +660,7 @@ function ex49() {
    * window.name = "Jay" 이런식으로 들어가게 됩니다.
    */
   console.log(jay2);
-  
+
   console.log(age)
   console.log(name)
   console.log(subject)
@@ -671,4 +671,36 @@ function ex49() {
 
 
 
+function ex50() {
 
+  function Storage() {
+    this.dataStore = {};
+  }
+  Storage.prototype.put = function(key, data){
+    this.dataStore[key] = data;
+  }
+  Storage.prototype.getData = function(key) {
+    return this.dataStore[key];
+  }
+
+  const productStorage = new Storage();
+  productStorage.put('id1001', {name:'키보드', price : 2000});
+  console.log(productStorage.getData('id1001'));
+
+  function removableStorage(){
+    Storage.call(this);
+  }
+  removableStorage.prototype = Object.create(Storage.prototype);
+  removableStorage.prototype.removeAll = function() {
+    this.dataStore = {};
+  }
+
+  const productStorage2 = new removableStorage();
+  productStorage2.put('id001', {name:'키보드', price:2000});
+  productStorage2.removeAll();
+  const item2 = productStorage2.getData('id001');
+  console.log(item2)
+
+
+}
+ex50();
