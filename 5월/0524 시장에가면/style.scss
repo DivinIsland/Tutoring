@@ -1,5 +1,11 @@
 $device_pc:500px;
 
+.wrap{
+    width: $device_pc;
+    margin: auto;
+    text-align: center;
+}
+
 @media screen and (max-width:$device_pc){
   .wrap{
     width:100%;
@@ -17,4 +23,6 @@ $device_pc:500px;
 }
 
 @include margin-top-setting(20);
+
+
 
