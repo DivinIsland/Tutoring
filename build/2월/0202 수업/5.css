@@ -1,0 +1,1 @@
+div{text-align:center;font-size:50px}.header{min-height:100px}.main-container{margin:10px 0}.main-container .mid{width:calc(100% / 3);float:left;padding-right:5px}.main-container .mid:last-child{padding-right:0}.main-container:after{content:'';display:block;clear:both}.footer{min-height:100px}.content{background-color:#ececec;min-height:400px}.bggray{background-color:#ececec}

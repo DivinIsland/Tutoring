@@ -1,0 +1,1 @@
+.box{position:relative;border:1px solid red;height:200px}.box:after{position:absolute;display:block;content:'';clear:both;width:100%;height:100%;left:0;top:0;filter:blur(10px);-webkit-filter:blur(10px);background:url("https://lh3.googleusercontent.com/proxy/eeyTtLtH1VpZmYRcyLV2PhimemjbcUHLccVabbA4eJedMRR02xZM6XFKXdw6A5s9uPyNBIJeL2TdXVcJ1fLvLKHvMYRMpQjn7MHYKuCYY1m0BdYJ")}
