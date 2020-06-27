@@ -1,0 +1,56 @@
+$device_pc:500px;
+
+.wrap{
+  width: 800px;
+  margin: auto;
+}
+.randomBox_box{
+min-height: 200px;
+border: 1px solid gray;
+&:after{
+  content:"";
+  display: block;
+  clear: both;
+}
+}
+
+.box{
+  border: 1px solid #eee;
+  float: left;
+  width: calc(100%/5);
+  min-height: 20px;
+}
+
+.randombox_title{
+  text-align: center;
+}
+
+.randombox_img{
+  width: 100%;
+  height: 100%;
+  
+}
+.randombox_imgbox{
+  border: 1px solid red;
+}
+
+
+
+@media screen and (max-width:$device_pc){
+  .wrap{
+    width:100%;
+  }
+}
+
+@mixin margin-top-setting($range) {
+  $i: 1;
+  @while $i <= $range {
+    .margin-top-#{$i * 10} {
+      margin-top: $i * 10px;
+    }
+    $i : $i+1;
+  }
+}
+
+@include margin-top-setting(20);
+
