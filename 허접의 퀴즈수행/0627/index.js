@@ -8,9 +8,9 @@ submitBtn.addEventListener("click", function (e) {
     data2: inputBox2.value,
   };
 
-  const show = checkData(config);
+  const showData = checkData(config);
 
-  show(config);
+  showData(config);
 });
 
 //---------------------------function----------------------------//
@@ -19,35 +19,22 @@ function el(elem) {
   return document.querySelector(`#${elem}`);
 }
 
-//1번 currying
-
-// function checkData(config) {
-//   const { data1, data2 } = config;
-//   const isTrueData1 = !!data1;
-//   const isTrueData2 = !!data2;
-
-//   if (isTrueData1 && isTrueData2) {
-//     return function showData(config) {
-//       alert(`${data1}\n${data2}`);
-//     };
-//   } else {
-//     alert("값을 입력하세요.");
-
-//   }
-// }
-
 //2번 currying
 
 function checkData(config) {
   const { data1, data2 } = config;
-  const isTrueData1 = !!data1;
-  const isTrueData2 = !!data2;
+  const isTrueData1 = !!data1.trim();
+  const isTrueData2 = !!data2.trim();
 
   return function showData(config) {
-    if (isTrueData1 && isTrueData2) {
-      alert(`${data1}\n${data2}`);
+    if (isTrueData1) {
+      if (isTrueData2) {
+        alert(`${data1}\n${data2}`);
+      } else {
+        alert("2번 값을 확인하세요.");
+      }
     } else {
-      alert("값을 입력하세요.");
+      alert("1번 값을 확인하세요.");
     }
   };
 }

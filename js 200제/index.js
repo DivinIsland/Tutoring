@@ -1,6 +1,5 @@
 function ex30() {
-
-  var address = 'Seoul';
+  var address = "Seoul";
 
   var members = {};
 
@@ -14,39 +13,33 @@ function ex30() {
 
   var family = { address, members, addFamily, getHeadCount };
 
-  family.addFamily(30, 'abcd', 'abcg');
-  family.addFamily(20, 'abce', 'abch');
-  family.addFamily(10, 'abcf', 'abci');
+  family.addFamily(30, "abcd", "abcg");
+  family.addFamily(20, "abce", "abch");
+  family.addFamily(10, "abcf", "abci");
 
   console.log(family.getHeadCount());
   console.log(family);
-
 }
 
 // ex30();
 
-
-
 function ex31() {
   var obj = {};
   for (var i = 0; i < 4; i++) {
-    obj['key' + i] = i;
+    obj["key" + i] = i;
   }
   console.log(obj);
 
-  var profile = 'chloe:30';
+  var profile = "chloe:30";
 
   var person = {
     [profile]: true,
-    [profile.split(':')[0]]: profile.split(':')[1]
+    [profile.split(":")[0]]: profile.split(":")[1],
   };
 
   console.log(person);
-
 }
 // ex31();
-
-
 
 function ex32() {
   // var obj = {a:1, b:2, c:30, d:44, e:5};
@@ -61,14 +54,13 @@ function ex32() {
   // console.log(`newA >>> ${newA}`)
   // console.log(`newF >>> ${newF}`)
 
-
   var arr = [1, 2, 30, 44, 5];
 
   var [b, c, ...rest] = arr;
 
-  console.log(`b >>> ${b}`)
-  console.log(`c >>> ${c}`)
-  console.log(`rest >>> ${rest}`)
+  console.log(`b >>> ${b}`);
+  console.log(`c >>> ${c}`);
+  console.log(`rest >>> ${rest}`);
 
   var [a = 10, f = 9] = [1];
 
@@ -88,32 +80,24 @@ function ex32() {
 
   console.log(`a >>> ${a}`);
   console.log(`f >>> ${f}`);
-
-
-
 }
 //  ex32();
 
-
-
-
-
 function ex33() {
-
   const symbol = Symbol();
-  const hello = Symbol('hello');
+  const hello = Symbol("hello");
 
   console.log(Number(3) === Number(3));
-  console.log(Symbol('symbol') === Symbol('symbol'));
+  console.log(Symbol("symbol") === Symbol("symbol"));
   console.log(Symbol() === Symbol());
   console.log(typeof Symbol());
 
-  const nationility = Symbol('nationility');
+  const nationility = Symbol("nationility");
   const user = {
-    name: 'jay'
-  }
+    name: "jay",
+  };
 
-  user[nationility] = 'korean';
+  user[nationility] = "korean";
   console.log(user[nationility]);
 
   for (let key in user) {
@@ -121,72 +105,48 @@ function ex33() {
     console.log(user[key]);
   }
 
-  console.log(Object.keys(user))
+  console.log(Object.keys(user));
   console.log(Object.getOwnPropertyNames(user));
   console.log(JSON.stringify(user));
 
   const symbolProperties = Object.getOwnPropertySymbols(user);
   console.log(symbolProperties);
   console.log(user[symbolProperties[0]]);
-
 }
 //  ex33();
 
-
-
-
-
 function ex34() {
-
   var greeting_expression = function (name) {
-    console.log('Hi, ' + name);
-
-  }
+    console.log("Hi, " + name);
+  };
 
   function greeting_declaration(name) {
-    console.log('Hi, ' + name);
+    console.log("Hi, " + name);
   }
 
-  greeting_expression('YG');
-  greeting_declaration('YG');
-
+  greeting_expression("YG");
+  greeting_declaration("YG");
 }
 //  ex34();
 
-
-
-
-
 function ex35() {
-
-
   function checkNumber(val) {
-    if (typeof val !== 'number') throw '유효하지 않은 값입니다.';
-    console.log('숫자형으로 확인 되었습니다.');
+    if (typeof val !== "number") throw "유효하지 않은 값입니다.";
+    console.log("숫자형으로 확인 되었습니다.");
   }
 
   try {
     checkNumber(100);
-    checkNumber('aa');
-
+    checkNumber("aa");
   } catch (e) {
     console.log(`에러발생 >>> ${e}`);
   } finally {
-    console.log('완료');
+    console.log("완료");
   }
-
-
-
-
 }
 // ex35();
 
-
-
-
-
 function ex36() {
-
   function sum() {
     var total = 0;
     for (i = 0; i < arguments.length; i++) {
@@ -202,19 +162,13 @@ function ex36() {
   function testArg() {
     var newArr = Array.prototype.slice.call(arguments);
     console.log(newArr);
-    console.log(newArr.indexOf('b'));
-    console.log(arguments.indexOf('b'));
+    console.log(newArr.indexOf("b"));
+    console.log(arguments.indexOf("b"));
   }
 
-  testArg('a', 'b');
-
-
+  testArg("a", "b");
 }
 // ex36();
-
-
-
-
 
 function ex37() {
   function drawChart(width = 200, height = 400) {
@@ -231,26 +185,17 @@ function ex37() {
 
   drawChart2(300);
   drawChart2();
-
-
-
 }
 // ex37();
 
-
-
-
-
 function ex38() {
-
   function sum(...args) {
-
     var total = 0;
     for (var i = 0; i < args.length; i++) {
       total += args[i];
     }
 
-    console.log(args.indexOf(1))
+    console.log(args.indexOf(1));
     return total;
   }
 
@@ -262,18 +207,12 @@ function ex38() {
       total += others[i];
     }
     return total;
-
   }
 
   console.log(sum2(1, 2));
   console.log(sum2(1, 2, 3, 4));
-
 }
 // ex38();
-
-
-
-
 
 function ex39() {
   var a = 10;
@@ -291,10 +230,9 @@ function ex39() {
 
   print();
 
-
   var a = "global";
 
-  console.log(a)
+  console.log(a);
 
   function print1() {
     console.log(a);
@@ -308,28 +246,20 @@ function ex39() {
   print1();
   print2();
   console.log(a);
-
 }
 // ex39();
-
-
 
 function ex40() {
   hello();
   function hello() {
-    console.log('hi')
+    console.log("hi");
   }
-
-
-
-};
+}
 // ex40();
 
-
 function ex41() {
-
   if (true) {
-    var functionScopeValue = 'global';
+    var functionScopeValue = "global";
     let blockScopeValue = "local";
   }
 
@@ -341,36 +271,27 @@ function ex41() {
   if (true) {
     console.log(value);
     let value = "안쪽값";
-
   }
-
-};
+}
 // ex41();
 
 function ex42() {
+  const constUser = { name: "c", age: 27 };
+  console.log(constUser.name, constUser.age);
 
-  const constUser = { name: 'c', age: 27 };
-  console.log(constUser.name, constUser.age)
-
-  constUser.name = 'hi';
+  constUser.name = "hi";
   constUser.age = 30;
 
-  console.log(constUser.name, constUser.age)
-
-
-
+  console.log(constUser.name, constUser.age);
 }
 
 // ex42();
 
-
-
 function ex43() {
-
-  var person = 'aa';
+  var person = "aa";
 
   function print() {
-    var person2 = 'bb';
+    var person2 = "bb";
 
     function innerPrint() {
       console.log(person);
@@ -378,23 +299,16 @@ function ex43() {
     }
 
     innerPrint();
-    console.log('print finished');
+    console.log("print finished");
   }
 
   print();
 
-  console.log('finished')
-
-
-
-
-};
+  console.log("finished");
+}
 // ex43();
 
-
-
 function ex44() {
-
   function createCounterClosure() {
     let count = 0;
 
@@ -405,7 +319,7 @@ function ex44() {
 
       getCount: function () {
         return count;
-      }
+      },
     };
   }
 
@@ -418,27 +332,24 @@ function ex44() {
 
   counter2.increase();
   console.log(counter2.getCount());
-
-};
+}
 // ex44();
-
-
 
 function ex45() {
   var user = {
-    name: 'aa'
+    name: "aa",
   };
 
-  let descriptor = Object.getOwnPropertyDescriptor(user, 'name');
-  console.log(descriptor)
+  let descriptor = Object.getOwnPropertyDescriptor(user, "name");
+  console.log(descriptor);
 
   let user2 = {};
 
-  Object.defineProperty(user2, 'name', {
-    value: 'hi',
+  Object.defineProperty(user2, "name", {
+    value: "hi",
     enumerable: true,
     configurable: true,
-    writable: false
+    writable: false,
   });
 
   console.log(user2.name);
@@ -446,37 +357,34 @@ function ex45() {
   console.log(user2.name);
 
   let user3 = {
-    name: 'aa',
+    name: "aa",
     toString() {
       return this.name;
-    }
+    },
   };
 
   Object.defineProperty(user3, "toString", {
-    enumerable: false
+    enumerable: false,
   });
 
   for (key in user3) {
-    console.log(key, user3[key])
+    console.log(key, user3[key]);
   }
 
   let user4 = {};
-  Object.defineProperty(user4, 'name', {
+  Object.defineProperty(user4, "name", {
     value: "aa",
-    configurable: false
+    configurable: false,
   });
 
   delete user4.name;
 
-  console.log(user4)
+  console.log(user4);
 
   Object.defineProperty(user4, "name", {
-    writable: false
-  })
-
-
-
-};
+    writable: false,
+  });
+}
 // ex45();
 
 function ex46() {
@@ -493,17 +401,14 @@ function ex46() {
         this._age = age;
       }
     },
-    enumerable: true
-
+    enumerable: true,
   });
-
 
   user.age = 10;
   console.log(user.age);
   user.age = -1;
 
   let user2 = {
-
     get name() {
       return this._name;
     },
@@ -512,25 +417,17 @@ function ex46() {
         throw new Error("3 letter");
       }
       this._name = val;
-    }
-  }
+    },
+  };
 
-  user2.name = 'harin';
+  user2.name = "harin";
   console.log(user2.name);
   user2.name = "ha";
-
-
-
-
-
-
-};
+}
 // ex46();
 
-
-
 function ex47() {
-  const double = x => x + x;
+  const double = (x) => x + x;
   console.log(double(4));
 
   const add = (a, b) => a + b;
@@ -538,7 +435,7 @@ function ex47() {
 
   const printArguments = () => {
     console.log(arguments);
-  }
+  };
 
   printArguments(1, 2, 3);
 
@@ -546,25 +443,19 @@ function ex47() {
     let total = 0;
     for (let i = 0; i < args.length; i++) {
       total += args[i];
-      console.log(args[i])
+      console.log(args[i]);
     }
     return total;
-  }
-  console.log(sum(1, 2, 3, 4, 5, 6, 7, 9))
+  };
+  console.log(sum(1, 2, 3, 4, 5, 6, 7, 9));
 
   setTimeout(() => {
-    console.log('화살표 함수!');
+    console.log("화살표 함수!");
   }, 1000);
-
-
-
-};
+}
 // ex47();
 
-
-
 function ex48() {
-
   // const teacherJay = {
   //   name :'J',
   //   age : 30,
@@ -589,21 +480,21 @@ function ex48() {
   const studentProto = {
     gainExp: function () {
       this.exp++;
-    }
-  }
+    },
+  };
 
   const harin = {
-    name: '하린',
+    name: "하린",
     age: 10,
     exp: 0,
-    __proto__: studentProto
+    __proto__: studentProto,
   };
 
   const Bbo = {
     name: "Bbo",
     age: 20,
     exp: 10,
-    __proto__: studentProto
+    __proto__: studentProto,
   };
 
   Bbo.gainExp();
@@ -612,29 +503,22 @@ function ex48() {
 
   console.log(harin);
   console.log(Bbo);
-
-
-
-
-};
+}
 // ex48();
 
-
-
 function ex49() {
-
   function Teacher(name, age, subject) {
     this.name = name;
     this.age = age;
     this.subject = subject;
-    console.log(this, name, 'hello')
+    console.log(this, name, "hello");
 
     this.teach = function (student) {
       console.log(`${student}에게 ${subject}를 가르칩니다.`);
     };
   }
 
-  const jay = new Teacher('c', 30, 'js');
+  const jay = new Teacher("c", 30, "js");
   /**
    * 1. 함수가 실행이 됩니다.
    * 2. new 키워드를 확인하면,
@@ -653,7 +537,7 @@ function ex49() {
   console.log(jay.constructor);
   console.log(jay instanceof Teacher);
 
-  const jay2 = Teacher('jay', 30, 'js');
+  const jay2 = Teacher("jay", 30, "js");
   /**
    * 기본적으로 함수 내에서의 this는 외부 렉시컬 스코프의 객체를 가리킵니다.
    * 함수의 외부 렉시컬 스코프의 객체는 window object이므로,
@@ -661,46 +545,62 @@ function ex49() {
    */
   console.log(jay2);
 
-  console.log(age)
-  console.log(name)
-  console.log(subject)
-
-};
+  console.log(age);
+  console.log(name);
+  console.log(subject);
+}
 // ex49();
 
-
-
-
 function ex50() {
-
   function Storage() {
     this.dataStore = {};
   }
-  Storage.prototype.put = function(key, data){
+  Storage.prototype.put = function (key, data) {
     this.dataStore[key] = data;
-  }
-  Storage.prototype.getData = function(key) {
+  };
+  Storage.prototype.getData = function (key) {
     return this.dataStore[key];
-  }
+  };
 
   const productStorage = new Storage();
-  productStorage.put('id1001', {name:'키보드', price : 2000});
-  console.log(productStorage.getData('id1001'));
+  productStorage.put("id1001", { name: "키보드", price: 2000 });
+  console.log(productStorage.getData("id1001"));
 
-  function removableStorage(){
+  function removableStorage() {
     Storage.call(this);
   }
   removableStorage.prototype = Object.create(Storage.prototype);
-  removableStorage.prototype.removeAll = function() {
+  removableStorage.prototype.removeAll = function () {
     this.dataStore = {};
-  }
+  };
 
   const productStorage2 = new removableStorage();
-  productStorage2.put('id001', {name:'키보드', price:2000});
+  productStorage2.put("id001", { name: "키보드", price: 2000 });
   productStorage2.removeAll();
-  const item2 = productStorage2.getData('id001');
-  console.log(item2)
-
-
+  const item2 = productStorage2.getData("id001");
+  console.log(item2);
 }
-ex50();
+// ex50();
+
+function ex96() {
+  const arr2 = ["가", "가나", "나", "다", "라", "마", "바", "가정", "가수"];
+  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+  const filteredTwo = arr.filter((a) => {
+    console.log(`현재 위치의 값은 ${a} 입니다.`);
+    return a % 2 === 0;
+  });
+
+  console.log(filteredTwo);
+
+  const filteredThree = arr.filter((a) => a % 3 === 0);
+  console.log(filteredThree);
+
+  const filteredArr = arr2.filter((item) => {
+    return item.indexOf("가") !== -1;
+  });
+
+  console.log(filteredArr);
+}
+
+ex96();
