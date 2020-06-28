@@ -25,16 +25,16 @@ const config = {
 
 inputBox.addEventListener("keyup", function (e) {
   const selectMode = Number(selectBox.value);
-  const inputValue = Number(inputBox.value);
+  const inputValue = inputBox.value;
 
   if (e.key === "Enter") {
     if (!!inputValue) {
-      // select add일때
+      // add일때
       if (selectMode === 0) {
         config.addList.push(inputValue);
       }
 
-      //select search 일때
+      //search 일때
       if (selectMode === 1) {
         const searchData = config.addList.filter((item) => {
           return item === inputValue;
@@ -45,7 +45,11 @@ inputBox.addEventListener("keyup", function (e) {
         } else {
           const deleteIndex = config.addList.indexOf(inputValue);
           config.addList.splice(deleteIndex, 1);
-          config.searchList.push(searchData);
+
+          // config.searchList.push(searchData);
+
+          config.searchList = config.searchList.concat(searchData);
+          console.log(config.searchList, searchData);
         }
       }
     } else {
