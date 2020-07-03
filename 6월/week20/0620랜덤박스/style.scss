@@ -1,0 +1,33 @@
+$device_pc:500px;
+
+.wrap{
+  width: 800px;
+  margin: auto;
+}
+.randomBox_box{
+min-height: 200px;
+border: 1px solid gray;
+}
+
+
+
+
+
+@media screen and (max-width:$device_pc){
+  .wrap{
+    width:100%;
+  }
+}
+
+@mixin margin-top-setting($range) {
+  $i: 1;
+  @while $i <= $range {
+    .margin-top-#{$i * 10} {
+      margin-top: $i * 10px;
+    }
+    $i : $i+1;
+  }
+}
+
+@include margin-top-setting(20);
+

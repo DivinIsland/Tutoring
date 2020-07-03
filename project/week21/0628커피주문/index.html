@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+  <!-- 부가적인 테마 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+  <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <div class="loading_box" id="loadingBox">
+    <div class="loading_bar">
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="wrap">
+      <header>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title jumbotron text-center">
+              <h1>Coffee Order</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="coffee_search_box">
+              <input type="text" class="form-control" id="inputSearch" placeholder="Search Data">
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="coffee_list_box" id="coffeeListBox">
+
+            <!-- <div class="coffee_item_box">
+              <label for="test1" class="block">
+                <input type="checkbox" id="test1" hidden class="coffee_check_box">
+                <div class="coffee_item_card">
+                  <div class="coffee_item_row img">
+                    <img
+                      src="https://bettermonday.coffee/wp-content/uploads/2013/06/%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B4%EB%85%B8ice.jpg"
+                      alt="" class="coffee_item_img">
+                  </div>
+                  <div class="coffee_item_row name">
+                    <p class="coffee_item_title">아메리카노</p>
+                  </div>
+                  <div class="coffee_item_row price">
+                    <p class="coffee_item_price">3,500 WON</p>
+                  </div>
+                </div>
+              </label>
+            </div>         -->
+
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="coffee_order_box">
+            <button class="btn btn-primary btn-lg btn-block margin-top-10" id="orderBtn">Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Button trigger modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="detailmodal" tabindex="-1" role="dialog" aria-labelledby="modalHeader" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalHeader">Detail</h4>
+        </div>
+
+        <form action="" id="modalForm">
+          <div class="modal-body" id="modalBody">
+            <div class="row modal_content_box">
+              <div class="col-md-6">
+
+                <div class="modalDetail_row">
+                  <img
+                    src="https://bettermonday.coffee/wp-content/uploads/2013/06/%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B4%EB%85%B8ice.jpg"
+                    alt="" class="coffee_item_img large">
+                </div>
+
+              </div>
+              <div class="col-md-6 text-center">
+
+                <div class="modalDetail_row">
+                  <div class="modal_item_name">아메리카노</div>
+                </div>
+
+                <div class="modalDetail_row">
+                  <div class="modal_item_price">3,500 원</div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="modal-control">
+            <div class="modalDetail_row margin-top-10">
+              <button class="btn btn-default">-</button>
+              <button class="btn">0</button>
+              <button class="btn btn-default">+</button>
+            </div>
+
+            <div class="modalDetail_row margin-top-10">
+              <div class="modal_btn box">
+                <input type="radio" name="temper" id="detailCoffeeTemperHot" class="modal_input temper" checked hidden
+                  value="0">
+                <label for="detailCoffeeTemperHot" class="btn btn-default modal_btn item hot">HOT</label>
+                <input type="radio" name="temper" id="detailCoffeeTemperIce" class="modal_input temper" hidden
+                  value="1">
+                <label for="detailCoffeeTemperIce" class="btn btn-default modal_btn item ice">ICE</label>
+              </div>
+
+              <div class="modalDetail_row margin-top-20">
+                <select name="size" id="detailCoffeeSize" class="form-control">
+                  <option value="" class="hidden">Size</option>
+                  <option value="0">Tall</option>
+                  <option value="1">Grande</option>
+                </select>
+              </div>
+            </div>
+        </form>
+
+        <div class="modal-footer" id="modalFooter">
+          <button type="button" class="btn btn-default">Add to Cart</button>
+          <button type="button" class="btn btn-default">Order immediately</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./function.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
