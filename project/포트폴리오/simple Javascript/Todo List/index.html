@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Amiri|Aleo|Cardo|Courgette&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="wrap">
+
+            <div class="row">
+                <div class="jumbotron text-center">
+                    <h1 class="title">To Do List</h1>
+                </div>
+            </div>
+
+            <div class="row todo-list-area">
+
+                <div class="row">
+                    <div class="col-xs-8 no-padding">
+                        <input type="text" class="form-control" id="inputBox">
+                    </div>
+                    <div class="col-xs-4 no-padding">
+                        <button class="btn btn-primary form-control" id="addBtn">
+                            추가
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 todo-list-box text-center" id="todoListBox">
+                        <li>초밥, 연어</li>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="./function.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

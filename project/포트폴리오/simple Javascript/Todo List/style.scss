@@ -1,0 +1,17 @@
+@import "./common";
+
+
+
+.title {
+  font-family: Amiri;
+}
+
+.todo-list-area {
+  min-height: 600px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-top: 0;
+}
+
+.todo-list-box {
+  padding-top: 20px;
+}

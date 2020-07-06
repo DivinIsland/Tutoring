@@ -25,44 +25,59 @@
 
 
 
-    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./style.css">
 
 </head>
 
 <body>
-
-
     <div class="container">
         <div class="jumbotron text-center">
-            <h1>quiz-2</h1>
+            <h1>lotto quiz!</h1>
         </div>
 
         <div class="row">
-            <div class="col-md-12">
-                <h1>Timer</h1>
-            </div>
+            <h2 class="text-center todayLotto">오늘의 로또번호</h2>
+        </div>
 
-            <div class="col-md-12" id="timeBox">
-                Start!
+        <div class="row lotto-num">
+
+            <div class="col-md-8 text-center">
+                <div id="todayLottoShowBox" class="number-show">
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-primary form-control" id="todayLottoBtn">Lotto</button>
             </div>
         </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
         <div class="row">
-            <div class="col-md-6">
-                <select name="" id="timeSelect">
-                    <option value="0">0m</option>
-                    <option value="1">1m</option>
-                    <option value="2">2m</option>
-                    <option value="3">3m</option>
-                    <option value="4">4m</option>
-                </select>
-                <button class="btn btn-primary" id="checkBtn">Check!</button>
+            <h2 class="text-center todayLotto">나의 로또번호</h2>
+        </div>
+
+        <div class="row lotto-num">
+
+            <div class="col-md-8 text-center">
+                <div id="myLottoShowBox" class="number-showblue">
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-primary form-control" id="myLottoBtn">MyLotto</button>
             </div>
         </div>
+
+
+
+
 
     </div>
-
-    <button id="testBtn">Test</button>
 
 
 
