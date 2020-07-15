@@ -7,6 +7,7 @@ function dataDrawing(config) {
   list.sort((a, b) => a - b);
 
   const listJoin = list.join(" ");
+  console.log("draw", list, target);
   target.innerHTML = listJoin;
 }
 
@@ -55,7 +56,6 @@ myLottoBtn.addEventListener("click", function (e) {
   if (myNumArr.length < 6) {
     if (isDuplicated === -1) {
       myNumArr.push(lottoNum);
-      console.log(myNumArr.length, "myNumArr.length");
 
       const drawFormat = {
         target: myLottoShowBox,
@@ -69,6 +69,7 @@ myLottoBtn.addEventListener("click", function (e) {
   }
 
   if (myNumArr.length === lottoNumArr.length) {
+    console.log("in");
     const checkArr = lottoNumArr.find((item) => {
       const arrIndex = lottoNumArr.indexOf(item);
       return item === myNumArr[arrIndex];
