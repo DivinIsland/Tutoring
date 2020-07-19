@@ -11,7 +11,7 @@ function dontGiveMeFive(obj) {
   }
 
   const filteredArr = numArr.filter((item) => {
-    return item.includes("5") !== true;
+    return item.indexOf("5") === -1;
   });
 
   return filteredArr;
@@ -20,7 +20,9 @@ function dontGiveMeFive(obj) {
 submitBtn.addEventListener("click", function (e) {
   const inputValue = inputBox.value;
 
-  const startEndArr = inputValue.split(",");
+  const startEndArr = inputValue.split(",").map((item) => {
+    return item.trim();
+  });
 
   const calFormat = {
     start: startEndArr[0],
@@ -33,3 +35,5 @@ submitBtn.addEventListener("click", function (e) {
 
   inputBox.value = "";
 });
+
+// 공백이 들어갔을때 결과가 나오지 않는 오류를 수정할것.

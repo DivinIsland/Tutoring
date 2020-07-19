@@ -1,5 +1,6 @@
 function sortAlphabet(val) {
   const stringArr = val.split(" ");
+  console.log(stringArr);
 
   stringArr.sort();
 
