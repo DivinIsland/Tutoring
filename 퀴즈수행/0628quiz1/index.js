@@ -70,6 +70,3 @@ inputBox.addEventListener("keyup", function (e) {
     inputBox.value = "";
   }
 });
-
-
-// select 이벤트로 걸기
