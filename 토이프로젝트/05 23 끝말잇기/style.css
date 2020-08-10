@@ -1,0 +1,17 @@
+.center {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.show-area {
+  width: 200px;
+  height: 50px;
+  border: 1px solid red;
+  margin: auto;
+  position: relative;
+}
+
+#show-word {
+  line-height: 50px;
+}
+/*# sourceMappingURL=style.css.map */

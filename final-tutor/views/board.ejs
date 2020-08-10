@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <%- include("./common/head.ejs") %>
+  <link rel='stylesheet' href='/css/style.css' />
+</head>
+
+<body>
+  <%- include("./common/header.ejs") %>
+  <h1><%= title %></h1>
+  <p>Welcome to <%= title %></p>
+
+  <div>
+    <input type="text" id="inputAuthor" placeholder="author">
+    <input type="text" id="inputTitle" placeholder="title">
+    <input type="text" id="inputContent" placeholder="content">
+    <button class="btn btn-primary" id="writeBtn">write</button>
+    <button class="btn btn-danger" id="deleteBtn">Delete</button>
+  </div>
+
+  <div id="target">
+    <% boardList.map(item=>{ %>
+    <div class="row">
+      <div class="col-md-1"><input type="checkbox" data-name="<%= item.contentSeq %>"></div>
+      <div class="col-md-2 text-center"><%= item.author %></div>
+      <div class="col-md-3 text-center"><%= item.title %></div>
+      <div class="col-md-3 text-center"><%= item.content %></div>
+      <div class="col-md-3 text-center"><%= item.stringCreateAt %></div>
+    </div>
+    <% }) %>
+  </div>
+
+
+
+
+
+
+
+  <%- include("./common/footer.ejs") %>
+  <script src="/js/board.js"></script>
+</body>
+
+</html>

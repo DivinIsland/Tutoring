@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+
+
+  <%- include("./common/head.ejs") %>
+  <link rel="stylesheet" href="/css/signup.css">
+</head>
+
+<body>
+  <%- include("./common/header.ejs") %>
+
+  <div>
+    <h1 class="title"><%= title %></h1>
+  </div>
+
+  <div class="container">
+    <div class="wrap">
+      <div class="signup_box" id="signupForm">
+
+        <form action="" class="signup_form">
+          <input type="text" class="form-control" placeholder="Name" id="inputName"><br>
+
+          <input type="text" class="form-control" placeholder="E-mail" id="inputEmail"><br>
+
+          <input type="password" class="form-control" placeholder="Password" id="inputPassword"><br>
+
+          <div class="btn_box">
+            <input type="submit" class="btn btn-success form-control" value="Submit">
+          </div>
+        </form>
+
+
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+  <%- include("./common/foot.ejs") %>
+  <script src="/js/signup.js"></script>
+
+</body>
+
+</html>

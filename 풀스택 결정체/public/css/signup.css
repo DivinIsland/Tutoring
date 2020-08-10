@@ -1,0 +1,17 @@
+.signup_box {
+  width: 800px;
+  /* border: 1px solid gray; */
+  margin: auto;
+  margin-top: 100px;
+}
+
+.signup_form {
+  width: 50%;
+  /* border: 1px solid gray; */
+  margin: auto;
+}
+
+.btn_box {
+  text-align: center;
+
+}

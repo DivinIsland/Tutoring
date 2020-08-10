@@ -1,4 +1,4 @@
-const text = "hello world";
+const text = "hello world abc";
 const reverseText = text.split("").reverse().join("");
 const reverseArr = reverseText.split(" ");
 const resultArr = [];

@@ -1,0 +1,20 @@
+<div class="header">
+  <div>
+
+    <% if(sess.isLogged) { %>
+    <a class="btn btn-primary" href="/">Home</a>
+
+    <a href="/auth/logout" class="btn btn-primary">Logout</a>
+    <a href="/users/mypage" class="btn btn-success">MyPage</a>
+
+    <% }else { %>
+    <a class="btn btn-warning" href="/auth/signin">Sign in</a>
+    <a class="btn btn-danger" href="/auth/signup">Sign up</a>
+    <a href="/auth/delete" class="btn btn-primary">Delete</a>
+
+
+    <% } %>
+    <a class="btn btn-success" href="/board">Board</a>
+
+  </div>
+</div>

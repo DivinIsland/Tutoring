@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <%- include("./common/head.ejs") %>
+  <link rel="stylesheet" href="/css/board.css">
+</head>
+
+<body>
+  <%- include("./common/header.ejs") %>
+
+  <div>
+    <h1 class="title"><%=title%></h1>
+  </div>
+
+
+
+
+
+  <div class="container">
+
+    <div class="wrap" id="target">
+
+      <div class="write_box">
+        <div class="write_title_box">
+          <input type="text" class="write_title form-control" id="writeTitle" placeholder="title">
+        </div>
+        <div class="write_content_box">
+          <input type="text" class="write_content form-control" id="writeContent" placeholder="content">
+        </div>
+        <div>
+          <input type="text" class="form-control" id="writeAuth" placeholder="Author">
+        </div>
+        <button class="btn write_btn" id="writeBtn">Write</button>
+
+      </div>
+
+      <%- include("./common/foot.ejs")%>
+
+      <script src="/js/boardCreate.js"></script>
+</body>
+
+</html>

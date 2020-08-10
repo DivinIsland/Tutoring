@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <%- include("./common/head.ejs") %>
+  <link rel='stylesheet' href='/css/style.css' />
+</head>
+
+<body>
+  <%- include("./common/header.ejs") %>
+  <h1><%= title %></h1>
+  <p>Welcome to <%= title %></p>
+
+  <input type="text" placeholder="name" id="inputName">
+
+  <input type="text" placeholder="email" id="inputEmail">
+
+  <input type="password" placeholder="password" id="inputPassword">
+
+  <button class="btn btn-primary" id="submitBtn">Sign up</button>
+
+
+
+
+
+
+  <%- include("./common/footer.ejs") %>
+  <script src="/js/signup.js"></script>
+</body>
+
+</html>

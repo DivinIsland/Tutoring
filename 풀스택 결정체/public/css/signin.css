@@ -1,0 +1,16 @@
+.wrap {
+  /* border: 1px solid gray; */
+  width: 600px;
+  margin: auto;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.form_box {
+  /* border: 1px solid gray; */
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}

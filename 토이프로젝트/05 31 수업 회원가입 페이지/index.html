@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+  <!-- 부가적인 테마 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+  <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <form action="" id="signUpForm">
+    <div class="container wrap">
+      <div class="row margin-top-100">
+        <div class="col-md-12">
+          <h1 class="title text-center">Sign up</h1>
+        </div>
+      </div>
+
+      <!-- NOTE: 이름 -->
+      <div class="row margin-top-50">
+        <div class="col-md-12">
+          <label for="signUpName">Name</label>
+          <input type="text" class="form-control" id="signUpName" placeholder="Name." autocomplete="off" name="name">
+        </div>
+      </div>
+      <div class="signup_info failure" data-name="name">
+        please check the name
+      </div>
+
+      <!-- NOTE: 이메일 -->
+      <div class="row margin-top-30">
+        <div class="col-md-12">
+          <label for="signUpEmail">Email</label>
+          <input type="text" class="form-control" placeholder="Email" autocomplete="off" id="signUpEmail" name="email">
+        </div>
+      </div>
+      <div class="signup_info failure" data-name="email">
+        please check the email
+      </div>
+
+      <!-- NOTE: 비밀번호 -->
+      <div class="row margin-top-20">
+        <div class="col-md-12">
+          <label for="signUpPassword">Password</label>
+          <div class="signup_password_box">
+            <input type="password" class="form-control" placeholder="Password." id="signUpPassword" name="password">
+          </div>
+          <div class="signup_info failure" data-name="password">
+            please check the password
+          </div>
+          <div class="signup_password_box margin-top-10">
+            <input type="password" class="form-control" placeholder="Re-Password." id="signUpRePassword" name="rePassword">
+          </div>
+        </div>
+      </div>
+      <div class="signup_info failure" data-name="rePassword">
+        please check the repassword
+      </div>
+
+      <!-- NOTE:  성별/생년월일 -->
+      <div class="row margin-top-30">
+        <div class="col-md-12">
+          <label for="">Gender / BirthDay</label>
+          <div class="row">
+            <div class="col-md-4">
+              <input type="radio" id="signUpGenderMale"  hidden class="signup_input gender" name="gender" value="1">
+              <label for="signUpGenderMale" class="signup_input genderLabel">Male
+              </label>
+              <input type="radio" id="signUpGenderFemale" hidden class="signup_input gender" name="gender" value="2" checked>
+              <label for="signUpGenderFemale" class="signup_input genderLabel">Female
+              </label>
+            </div>
+            <div class="col-md-8">
+              <div class="form-inline">
+                <div class="form-group">
+                  <select name="birthYear" id="signUpBirthYear" class="form-control">
+                    <option value="0" disabled selected hidden>Year</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <select name="birthMonth" id="signUpBirthMonth" class="form-control">
+                    <option value="0" disabled selected hidden>Month</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <select name="birthDay" id="signUpBirthDay" class="form-control">
+                    <option value="0" disabled selected hidden>Day</option>
+                  </select>
+                </div>
+                <div class="signup_info failure" data-name="birth">
+                  please check the birth
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- NOTE: 개인정보 동의 -->
+      <div class="row margin-top-30">
+        <div class="col-md-12 signup_term_box text-center">
+          <label for="signUpTermsAgree">
+            <input type="checkbox" id="signUpTermsAgree" name="terms">
+            <span>Terms of use of personal information</span>
+          </label>          
+          <span data-toggle="modal" data-target="#myModal" class="signup_term link"> view</span>
+          <div class="signup_info failure" data-name="terms">
+            please check the terms
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- NOTE: 회원가입 버튼 -->
+      <div class="row margin-top-30">
+        <div class="col-md-12">
+          <button class="btn btn-primary btn-lg btn-block" type="button" id="signUpSubmitBtn">Sign Up</button>
+        </div>
+      </div>
+
+
+    </div>
+  </form>
+
+
+
+
+  <!-- Button trigger modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Terms of Service</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde voluptatem magni nam a cumque? Hic nam in
+            minima repudiandae, deleniti molestiae voluptas eligendi! Praesentium ad unde rerum adipisci atque commodi!
+          </p>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perferendis sed, ab iusto iste
+            voluptatibus sint rerum ducimus laboriosam vitae corporis ea atque obcaecati accusantium. Voluptate
+            accusantium architecto vel sit.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium voluptas, porro saepe vero
+            voluptatibus error eaque ex aperiam inventore necessitatibus obcaecati? Quaerat, non minus! Ab veniam quidem
+            neque voluptatem autem!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./backend.js"></script>
+  <script src="./function.js"></script>
+  <script src="./index.js"></script>
+
+</body>
+
+</html>

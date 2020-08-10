@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <%- include("./common/head.ejs") %>
+  <link rel='stylesheet' href='/css/style.css' />
+</head>
+
+<body>
+  <%- include("./common/header.ejs") %>
+  <h1><%= title %></h1>
+  <p>Welcome to <%= title %></p>
+
+
+
+  <p>
+    이름 : <%= sess.profile.username %>
+    이메일 : <%= sess.profile.email %>
+  </p>
+
+  <button class="btn btn-danger" id="signoutBtn" data-name="<%= sess.profile.userCode %>">회원탈퇴</button>
+
+
+
+  <%- include("./common/footer.ejs") %>
+  <script src="/js/mypage.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.title {
+  text-align: center;
+  font-family: Amiri;
+  font-size: 48px;
+}

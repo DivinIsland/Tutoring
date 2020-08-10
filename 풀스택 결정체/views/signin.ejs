@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+
+  <%- include("./common/head.ejs") %>
+  <link rel="stylesheet" href="/css/signin.css">
+</head>
+
+<body>
+  <%- include("./common/header.ejs") %>
+
+  <div>
+    <h1 class="title"><%= title %></h1>
+  </div>
+
+  <div class="wrap">
+    <form action="" id="signinForm" class="form_box">
+      <input type="text" id="inputEmail" placeholder="E-mail" class="form-control"><br>
+
+      <input type="password" id="inputPassword" placeholder="Password" class="form-control"><br>
+
+      <button type="submit" class="btn btn-primary">Sign in</button><br>
+
+      <div class="text-center">
+        Don't you have Account? <a href="/auth/signup">Sign up</a>
+      </div>
+
+    </form>
+  </div>
+
+  <%- include("./common/foot.ejs") %>
+  <script src="/js/signin.js"></script>
+</body>
+
+</html>

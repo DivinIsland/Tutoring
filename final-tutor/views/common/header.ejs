@@ -1,0 +1,13 @@
+<a href="/" class="btn btn-default">Home</a>
+
+
+<% if(sess.isLogged){ %>
+<a href="/users/mypage" class="btn btn-default">마이페이지</a>
+<a href="/auth/logout" class="btn btn-default">로그아웃</a>
+<a href="/board" class="btn btn-default">게시판</a>
+
+<% }else { %>
+<a href="/auth/signup" class="btn btn-default">회원가입</a>
+<a href="/auth/signin" class="btn btn-default">로그인</a>
+
+<% } %>

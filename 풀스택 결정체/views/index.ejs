@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+
+
+  <%- include("./common/head.ejs") %>
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+
+
+
+<body>
+  <%- include("./common/header.ejs") %>
+
+  <div class="container">
+    <div class="wrap">
+      <div>
+        <h1 class="title"><%= title %></h1>
+      </div>
+
+      <div class="img_area">
+        <div class="img">
+        </div>
+      </div>
+
+
+      <%= JSON.stringify(sess) %>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.img_area {
+  min-height: 750px;
+  /* border: 1px solid gray; */
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  width: 1200px;
+  min-height: 700px;
+  margin: auto;
+  background-image: url(/img/img_1.jpg);
+  background-position: center;
+  background-size: cover;
+
+}

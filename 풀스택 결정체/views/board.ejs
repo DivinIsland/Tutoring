@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <%- include("./common/head.ejs") %>
+  <link rel="stylesheet" href="/css/board.css">
+</head>
+
+<body>
+  <%- include("./common/header.ejs") %>
+
+  <div>
+    <h1 class="title"><%=title%> <a href="/board/create" class="btn btn-default">Write</a></h1>
+  </div>
+
+
+
+
+
+  <div class="container">
+
+    <div class="wrap" id="target">
+
+      <% boardList.map(item=>{ %>
+      <div class="col-md-12 board_text">
+        <div class="col-md-1"><input type="checkbox" data-name="<%= item.contentSeq %>"></div>
+        <div class="col-md-2 text-center title_box"><%= item.title %></div>
+        <div class="col-md-6 text-center content_box"><%= item.content %></div>
+        <div class="col-md-2"><small><%= item.stringCreateAt %></small></div>
+        <div class="col-md-1"><small><%= item.author %></small></div>
+
+      </div><br><br>
+      <%}) %>
+
+    </div>
+  </div>
+
+  <div class="write_box">
+    <div class="write_title_box">
+      <input type="text" class="write_title form-control" id="writeTitle">
+    </div>
+    <div class="write_content_box">
+      <input type="text" class="write_content form-control" id="writeContent">
+    </div>
+    <button class="btn write_btn" id="writeBtn">Write</button>
+    <button class="btn btn-danger" id="contentDelete">delete</button>
+  </div>
+
+  <%- include("./common/foot.ejs")%>
+
+  <script src="/js/board.js"></script>
+</body>
+
+</html>
