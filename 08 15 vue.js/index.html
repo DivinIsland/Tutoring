@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue Sample</title>
+</head>
+
+<body>
+
+  <div id="app">
+    {{ message }} <br>
+
+    {{ structure }}
+
+  </div>
+  <br><br>
+  <div id="hello">
+    <div class="helo">{{ hello }}</div>
+    <div class="hi">{{ hi }}</div>
+    <div class="hawe">{{ hawe}}</div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <script>
+    const origin = new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello Vue.js!',
+        structure: 'structure show'
+      },
+
+    });
+
+
+
+    const originCopy = new Vue({
+      el: '#hello',
+      data: {
+        hello: 'hello',
+        hi: "hi",
+        hawe: "haweeeeeeee"
+      }
+    })
+  </script>
+
+</body>
+
+</html>
