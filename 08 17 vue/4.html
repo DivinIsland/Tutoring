@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+  <div id="app">
+    <my-component1></my-component1>
+    <my-component2></my-component2>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <script>
+    var cmp1 = {
+      template: "<div>first local component : {{cmp1Data}}</div>",
+      data: function () {
+        return {
+          cmp1Data: 100
+        };
+      }
+    }
+
+    var cmp2 = {
+      template: "<div>second local component : {{cmp2Data}}</div>",
+      data: function () {
+        return {
+          cmp1Data: 200,
+          cmp2Data: cmp1.data.cmp1Data
+        };
+      }
+    }
+
+    new Vue({
+      el: '#app',
+      components: {
+        'my-component1': cmp1,
+        'my-component2': cmp2,
+      }
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+  <div id="app">
+
+    <hi-cmp v-bind:data="config.message"></hi-cmp>
+    <hi-cmp v-bind:data="config.anothermessage"></hi-cmp>
+    <hi-cmp v-bind:data="config.anothermessage"></hi-cmp>
+    <hi-cmp v-bind:data="config.anothermessage"></hi-cmp>
+    <hi-cmp v-bind:data="config.anothermessage"></hi-cmp>
+    <hi-cmp v-bind:data="config.anothermessage"></hi-cmp>
+    <hi-cmp v-bind:data="config.anothermessage"></hi-cmp>
+    <hi-cmp v-bind:data="config.anothermessage"></hi-cmp>
+    <hi-cmp v-bind:data="config.anothermessage"></hi-cmp>
+    <hi-cmp v-bind:data="config.anothermessage"></hi-cmp>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+  <script>
+    Vue.component('hi-cmp', {
+      props: ['data'],
+      template: `<p>{{data}}</p>`
+    })
+
+    new Vue({
+      el: '#app',
+      data: {
+        config: {
+          message: 'hello from parent',
+          anothermessage: '잘살아보세'
+        }
+      }
+
+    })
+  </script>
+
+
+</body>
+
+</html>

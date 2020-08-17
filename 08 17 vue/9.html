@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+  <div id="app">
+    <h1>뷰 라우터 예제</h1>
+    <p>
+      <router-link to="/main">Main component</router-link>
+      <router-link to="/login">login component</router-link>
+    </p>
+    <router-view></router-view>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+  <script>
+    var main = {
+      template: "<div>Main page it is.</div>"
+    }
+    var login = {
+      template: "<div>login page it is.</div>"
+    }
+
+    var routes = [{
+      path: '/main',
+      component: main
+    }, {
+      path: '/login',
+      component: login
+    }]
+
+    var router = new VueRouter({
+      routes
+    })
+
+    var app = new Vue({
+      router
+    }).$mount('#app')
+  </script>
+
+
+</body>
+
+</html>

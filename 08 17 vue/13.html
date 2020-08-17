@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+  <div id="app">
+    <a v-if="flag">doit vuejs</a>
+    <ul>
+      <li v-for="idx in systems">{{idx}}</li>
+    </ul>
+    <p v-show="flag">두잇 뷰제이에스</p>
+    <h5 v-bind:id="uid">뷰 입문서</h5>
+    <button v-on:click="popupAlert">Warning</button>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        flag: false,
+        systems: ['android', 'ios', 'window'],
+        uid: 10
+      },
+      methods: {
+        popupAlert: function () {
+          alert("Warning!!");
+        }
+      }
+    })
+  </script>
+
+
+</body>
+
+</html>

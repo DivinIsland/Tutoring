@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+  <div id="app">
+    <header>
+      {{message}}
+    </header>
+    <todo-footer></todo-footer>
+    <todo-list></todo-list>
+
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <script>
+    Vue.component('todo-footer', {
+      template: "<p>This is a global component</p>"
+    })
+    const cmp = {
+      template: '<p>This is a local component</p>'
+    }
+    new Vue({
+      el: '#app',
+      data: {
+        message: 'This is a parent'
+      },
+      components: {
+        'todo-list': cmp
+      }
+    })
+  </script>
+</body>
+
+</html>
